@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './styles/index.css'
+import { Navbar } from "./layout/navbar";
+import { IntroPage } from "./pages/Intro";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    </>
-  )
+    <div className="bg-slate-50 dark:bg-slate-950">
+      <Navbar.Root>
+        <Navbar.Logo />
+        <Navbar.Content />
+      </Navbar.Root>
+
+      <IntroPage />
+    </div>
+  );
 }
 
-export default App
+export default App;
