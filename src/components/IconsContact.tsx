@@ -11,7 +11,7 @@ function IconsContact() {
       >
         <BiLogoLinkedin
           className="text-zinc-950 dark:text-zinc-50 hover:text-zinc-500 dark:hover:text-zinc-400"
-          size={30}
+          size={38}
         />
       </motion.button>
       <motion.button
@@ -21,7 +21,7 @@ function IconsContact() {
       >
         <BiLogoGithub
           className="text-zinc-950 dark:text-zinc-50 hover:text-zinc-500 dark:hover:text-zinc-400"
-          size={30}
+          size={38}
         />
       </motion.button>
       <motion.button
@@ -31,7 +31,7 @@ function IconsContact() {
       >
         <BiLogoGmail
           className="text-zinc-950 dark:text-zinc-50 hover:text-zinc-500 dark:hover:text-zinc-400"
-          size={30}
+          size={38}
         />
       </motion.button>
     </div>
