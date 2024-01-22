@@ -7,13 +7,10 @@ export function IntroPage() {
     <div className="min-h-screen flex flex-col relative">
       <HelloText />
 
-      {/* Ícones de Contato */}
-      <div className="absolute flex justify-center w-full items-center flex-col pb-5 bottom-0 left-0">
+      <div className="absolute flex justify-center w-full items-center flex-col pb-5 bottom-0 left-0 z-10">
         <IconsContact />
       </div>
-
-      {/* Setas de Rolagem */}
-      <div className="absolute flex justify-end w-full items-end flex-col pb-5 pr-4 lg:pr-20 bottom-0 left-0">
+      <div className="absolute flex justify-end w-full right-0 items-end flex-col pb-5 pr-4 lg:pr-20 bottom-0 left-0">
         <ScrollDown />
       </div>
     </div>
