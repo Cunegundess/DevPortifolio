@@ -4,7 +4,7 @@ import ScrollDown from "../components/ScrollDown";
 
 export function IntroPage() {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="h-screen flex flex-col relative">
       <HelloText />
 
       <div className="absolute flex justify-center w-full items-center flex-col pb-5 bottom-0 left-0 z-10">
