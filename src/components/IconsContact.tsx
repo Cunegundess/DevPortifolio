@@ -5,7 +5,7 @@ import IconLinkedin from "../assets/linkedin";
 
 function IconsContact() {
   return (
-    <div className="flex gap-4 justify-between">
+    <div className="flex gap-5 justify-between">
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <IconLinkedin
           className="text-zinc-950 dark:text-zinc-50 hover:text-zinc-500 dark:hover:text-zinc-400"
