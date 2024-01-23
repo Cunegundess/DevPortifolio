@@ -3,6 +3,7 @@ import AboutMePage from "./pages/AboutMe";
 import ContactMePage from "./pages/ContactMe";
 import { IntroPage } from "./pages/Intro";
 import ProjectsPage from "./pages/Projects";
+import SkillsPage from "./pages/Skills";
 import Work from "./pages/Work";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
       <IntroPage />
       <AboutMePage />
+      <SkillsPage />
       <Work />
       <ProjectsPage />
       <ContactMePage />

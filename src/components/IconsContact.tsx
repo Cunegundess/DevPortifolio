@@ -10,7 +10,7 @@ function IconsContact() {
         whileTap={{ scale: 0.9 }}
       >
         <BiLogoLinkedin
-          className="text-zinc-950 dark:text-zinc-50 hover:text-zinc-500 dark:hover:text-zinc-400"
+          className="text-zinc-950 dark:text-zinc-50 hover:text-blue-800 dark:hover:text-blue-800"
           size={38}
         />
       </motion.button>
@@ -30,7 +30,7 @@ function IconsContact() {
         whileTap={{ scale: 0.9 }}
       >
         <BiLogoGmail
-          className="text-zinc-950 dark:text-zinc-50 hover:text-zinc-500 dark:hover:text-zinc-400"
+          className="text-zinc-950 dark:text-zinc-50 hover:text-red-800 dark:hover:text-red-800"
           size={38}
         />
       </motion.button>

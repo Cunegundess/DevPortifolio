@@ -1,11 +1,7 @@
+import { MdTerminal } from "react-icons/md";
+
 function NavbarLogo() {
-  return (
-    <img
-      src="/src/assets/fotocirculoperfil.png"
-      className="w-10 h-10"
-      alt="Navbar Logo"
-    />
-  );
+  return <MdTerminal size={30} />;
 }
 
 export default NavbarLogo;

@@ -10,6 +10,8 @@ function NavbarContent() {
 
   const links = [
     { name: "Home", link: "/" },
+    { name: "AboutMe", link: "/" },
+    { name: "Skills", link: "/" },
     { name: "Work", link: "/" },
     { name: "Projects", link: "/" },
     { name: "Contact", link: "/" },
@@ -42,7 +44,7 @@ function NavbarContent() {
               key={link.name}
               className="mb-2  hover:text-zinc-500 dark:hover:text-zinc-400"
             >
-              <a href={link.link}>{link.name} </a>
+              <a href={`#${link.name}`}>{link.name} </a>
             </li>
           ))}
         </ul>
@@ -53,12 +55,14 @@ function NavbarContent() {
               key={link.name}
               className="hover:text-zinc-500 dark:hover:text-zinc-400"
             >
-              <a href={link.link}>{link.name}</a>
+              <a href={`#${link.name}`}>{link.name}</a>
             </li>
           ))}
         </ul>
       )}
       <ThemeToggle />
+      <img src="/src/assets/brazil-flag-icon-32.png"></img>
+      <img src="/src/assets/united-states-of-america-flag-icon-32.png"></img>
       <motion.button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="lg:hidden text-zinc-950 dark:text-zinc-50"
