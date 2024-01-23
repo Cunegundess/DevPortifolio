@@ -6,10 +6,10 @@ function ContactMePage() {
     <div id="Contact" className="h-screen flex flex-col lg:flex-row">
       <div className="lg:w-1/2 flex-col lg:ml-8 mt-28 lg:mt-[200px] justify-end lg:items-center lg:pr-4 px-5">
         <div className="text-center lg:flex-auto">
-          <h1 className="text-zinc-950 dark:text-zinc-50 text-7xl font-bold pb-5 lg:pb-5">
+          <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold pb-5 lg:pb-5">
             Contact Me
           </h1>
-          <span className="text-zinc-950 dark:text-zinc-50 text-2xl font-medium leading-[20px] ">
+          <span className="text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-medium leading-[20px] ">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.

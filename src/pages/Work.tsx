@@ -6,13 +6,13 @@ function WorkPage() {
   return (
     <div id="Work" className="h-screen flex flex-col lg:flex-row">
       <div className="lg:w-2/5 flex-col lg:ml-8 mt-28 lg:mt-[200px] justify-end lg:items-center lg:pr-4 px-5 text-center">
-        <h1 className="text-zinc-950 dark:text-zinc-50 text-7xl font-bold pb-5 lg:pb-5">
+        <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold pb-5 lg:pb-5">
           Experience
         </h1>
       </div>
       <div className="lg:mr-8 mt-8 lg:mt-[200px] flex-auto lg:w-1/2 justify-start items-end px-5 text-center h-fit">
         <div className="rounded-lg shadow-lg bg-zinc-50 dark:bg-slate-900 p-5">
-          <h2 className="text-zinc-950 dark:text-zinc-50 text-2xl font-bold leading-[30px] ">
+          <h2 className="text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-bold leading-[30px] ">
             Full-Stack Software Developer at{" "}
             <a
               href="https://youtan.com.br/"
