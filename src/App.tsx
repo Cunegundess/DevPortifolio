@@ -1,3 +1,4 @@
+import { Toaster } from "./components/ui/toaster";
 import { Navbar } from "./layout/navbar";
 import AboutMePage from "./pages/AboutMe";
 import ContactMePage from "./pages/ContactMe";
@@ -20,6 +21,8 @@ function App() {
       <Work />
       <ProjectsPage />
       <ContactMePage />
+
+      <Toaster />
     </div>
   );
 }

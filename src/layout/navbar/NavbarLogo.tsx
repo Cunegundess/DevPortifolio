@@ -1,11 +1,16 @@
-import { MdTerminal } from "react-icons/md";
+import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 function NavbarLogo() {
-  return <MdTerminal size={30} />;
-        // <Avatar>
-        //   <AvatarFallback>LC</AvatarFallback>
-        //   <AvatarImage src="https://github.com/cunegundess.png" />
-        // </Avatar>
+  return (
+    <Avatar>
+      <AvatarFallback>LC</AvatarFallback>
+      <AvatarImage
+        className="h-[40px] w-[40px] rounded-full"
+        src="https://github.com/cunegundess.png"
+        alt="@Cunegundess"
+      />
+    </Avatar>
+  );
 }
 
 export default NavbarLogo;
