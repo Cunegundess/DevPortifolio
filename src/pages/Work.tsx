@@ -23,7 +23,7 @@ function WorkPage() {
         <Card className="rounded-lg shadow-lg bg-zinc-50 dark:bg-slate-900 md:mx-10 lg:mx-0">
           <CardHeader>
             <CardTitle className="text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-bold leading-[30px] ">
-              Full-Stack Software Developer at{" "}
+              Full-Stack Software Developer at
               <a
                 href="https://youtan.com.br/"
                 target="_blank"

@@ -1,4 +1,5 @@
 import { Toaster } from "./components/ui/toaster";
+import { projects } from "./data/projects";
 import { Navbar } from "./layout/navbar";
 import AboutMePage from "./pages/AboutMe";
 import ContactMePage from "./pages/ContactMe";
@@ -9,7 +10,7 @@ import Work from "./pages/Work";
 
 function App() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-950">
+    <main className="h-screen bg-slate-50 dark:bg-slate-950">
       <Navbar.Root>
         <Navbar.Logo />
         <Navbar.Content />
@@ -19,11 +20,11 @@ function App() {
       <AboutMePage />
       <SkillsPage />
       <Work />
-      <ProjectsPage />
+      <ProjectsPage projects={projects} />
       <ContactMePage />
 
       <Toaster />
-    </div>
+    </main>
   );
 }
 
