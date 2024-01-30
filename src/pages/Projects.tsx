@@ -41,7 +41,7 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
                 key={project.id}
                 className="md:basis-1/2 lg:basis-1/2"
               >
-                <div className="p-1 h-svh">
+                <div className="p-1">
                   <Card className="bg-gray-50 dark:bg-gray-900">
                     <CardHeader>
                       <CardTitle className="text-gray-950 dark:text-gray-50 text-1xl lg:text-2xl font-bold leading-[30px]">
@@ -56,7 +56,7 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
                     </CardHeader>
                     <CardContent className="text-gray-950 dark:text-gray-50 text-center pb-0">
                       <Separator />
-                      <img className="lg:h-60 lg:w-96" src={project.img} />
+                      <img className="h-60 w-full" src={project.img} />
                       <p className="lg:text-left text-base leading-[25px] py-3">
                         {project.description}
                       </p>
