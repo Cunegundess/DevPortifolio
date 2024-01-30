@@ -10,7 +10,7 @@ import Work from "./pages/Work";
 
 function App() {
   return (
-    <main className="h-screen bg-slate-50 dark:bg-slate-950">
+    <main className="h-screen0 dark:bg-gray-950">
       <Navbar.Root>
         <Navbar.Logo />
         <Navbar.Content />

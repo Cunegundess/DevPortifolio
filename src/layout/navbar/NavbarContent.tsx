@@ -38,11 +38,11 @@ function NavbarContent() {
   return (
     <div className="flex flex-row gap-8 font-medium items-center relative ">
       {isMenuOpen ? (
-        <ul className="lg:hidden absolute top-10 right-0 bg-zinc-50 dark:bg-slate-900 py-2 px-5 shadow-lg rounded-md">
+        <ul className="lg:hidden absolute top-10 right-0 bg-gray-50 dark:bg-gray-900 py-2 px-5 shadow-lg rounded-md">
           {links.map((link) => (
             <li
               key={link.name}
-              className="mb-2  hover:text-zinc-500 dark:hover:text-zinc-400"
+              className="mb-2  hover:text-gray-500 dark:hover:text-gray-400"
             >
               <a href={`#${link.name}`}>{link.name} </a>
             </li>
@@ -53,7 +53,7 @@ function NavbarContent() {
           {links.map((link) => (
             <li
               key={link.name}
-              className="hover:text-zinc-500 dark:hover:text-zinc-400"
+              className="hover:text-gray-500 dark:hover:text-gray-400"
             >
               <a href={`#${link.name}`}>{link.name}</a>
             </li>
@@ -65,7 +65,7 @@ function NavbarContent() {
       <img src="/src/assets/united-states-of-america-flag-icon-32.png"></img>
       <motion.button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="lg:hidden text-zinc-950 dark:text-zinc-50"
+        className="lg:hidden text-gray-950 dark:text-gray-50"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >

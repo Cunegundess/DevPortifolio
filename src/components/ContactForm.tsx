@@ -43,7 +43,7 @@ export default function ContactForm() {
   }
 
   return (
-    <Card className="rounded-lg shadow-lg bg-zinc-50 dark:bg-slate-900">
+    <Card className="rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
       <CardContent className="p-0">
         <form
           onSubmit={handleSubmit(handleFormFields)}
@@ -52,7 +52,7 @@ export default function ContactForm() {
           <Input
             type="text"
             placeholder="Enter your name"
-            className="w-full p-2  bg-zinc-200 dark:bg-slate-700 rounded"
+            className="w-full p-2  bg-gray-200 dark:bg-gray-700 rounded"
             {...register("name", { required: true })}
           />
           {errors.name && (
@@ -63,7 +63,7 @@ export default function ContactForm() {
           <Input
             type="email"
             placeholder="Enter your email"
-            className="w-full p-2  bg-zinc-200 dark:bg-slate-700 rounded"
+            className="w-full p-2  bg-gray-200 dark:bg-gray-700 rounded"
             {...register("email", { required: true })}
           />
           {errors.email && (
@@ -73,7 +73,7 @@ export default function ContactForm() {
           )}
           <Textarea
             placeholder="Type your message here"
-            className="w-full h-20 p-2  bg-zinc-200 dark:bg-slate-700 rounded"
+            className="w-full h-20 p-2  bg-gray-200 dark:bg-gray-700 rounded"
             {...register("message", { required: true })}
           />
           {errors.message && (
