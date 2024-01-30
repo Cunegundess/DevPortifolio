@@ -27,9 +27,10 @@ function WorkPage() {
               <a
                 href="https://youtan.com.br/"
                 target="_blank"
-                className="hover:text-blue-500 inline-flex items-center gap-1"
+                className="hover:text-blue-500 hover:underline hover:decoration-3 inline-flex items-center gap-1 pl-1.5"
               >
-                Youtan <HiLink size={20} />
+                Youtan
+                <HiLink size={20} />
               </a>
             </CardTitle>
             <CardDescription className="text-zinc-950 dark:text-zinc-50 text-xl font-bold leading-[30px]">

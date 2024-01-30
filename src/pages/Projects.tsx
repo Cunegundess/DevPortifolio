@@ -48,7 +48,7 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
                         <a
                           href={project.link}
                           target="_blank"
-                          className="hover:text-blue-500 inline-flex items-center gap-1"
+                          className="hover:text-blue-500 hover:underline hover:decoration-3 inline-flex items-center gap-1"
                         >
                           {project.name} <HiLink size={20} />
                         </a>

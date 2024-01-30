@@ -1,4 +1,4 @@
-import { Toaster } from "./components/ui/toaster";
+import { Toaster } from "./components/ui/sonner";
 import { projects } from "./data/projects";
 import { Navbar } from "./layout/navbar";
 import AboutMePage from "./pages/AboutMe";
