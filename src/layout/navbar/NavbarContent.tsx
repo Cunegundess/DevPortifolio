@@ -61,8 +61,8 @@ function NavbarContent() {
         </ul>
       )}
       <ThemeToggle />
-      <img src="/src/assets/brazil-flag-icon-32.png"></img>
-      <img src="/src/assets/united-states-of-america-flag-icon-32.png"></img>
+      <img src="images/brazil-flag-icon-32.png"></img>
+      <img src="images/united-states-of-america-flag-icon-32.png"></img>
       <motion.button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="lg:hidden text-gray-950 dark:text-gray-50"
