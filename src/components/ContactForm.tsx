@@ -18,6 +18,7 @@ const contactFormSchema = z.object({
     .email(`Hmm... This email looks weird 🤔 Are you sure that's your email?`),
   message: z.string().min(1, "Your message is empty... 📝"),
 });
+
 type contactFormFieldsType = z.infer<typeof contactFormSchema>;
 
 export default function ContactForm() {

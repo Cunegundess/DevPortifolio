@@ -8,6 +8,9 @@ import ProjectsPage from "./pages/Projects";
 import SkillsPage from "./pages/Skills";
 import Work from "./pages/Work";
 
+// TODO: Add animations when scroll pages
+// TODO: Add the feature of translating the page
+
 function App() {
   return (
     <main className="h-screen0 dark:bg-gray-950">

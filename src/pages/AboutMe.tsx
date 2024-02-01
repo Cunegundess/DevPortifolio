@@ -14,11 +14,11 @@ function AboutMePage() {
           Development, particularly working with ReactJS and Django, as well as
           experience in Linux environments, among other technologies.
           <div className="py-1" />
-          🤔 Curious and enthusiastic about exploring new technologies.
-          <div className="py-1" />
           🚀 I aim to contribute to challenging projects, adding value and
           driving collective success. I'm determined to face new challenges and
           broaden my experience in the field of software development.
+          <div className="py-1" />
+          🤔 Curious and enthusiastic about exploring new technologies.
         </span>
       </div>
     </div>

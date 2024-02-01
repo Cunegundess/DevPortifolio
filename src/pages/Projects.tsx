@@ -22,6 +22,8 @@ interface ProjectsPageProps {
   projects: ProjectsData[];
 }
 
+// TODO: Refactor this jsx, wrap up in separate components
+
 function ProjectsPage({ projects }: ProjectsPageProps) {
   return (
     <div id="Projects" className="min-h-screen flex flex-col">
@@ -64,12 +66,11 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
                     </CardContent>
 
                     <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-1 lg:grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
-                      {project.stack.map((stackItem, index) => (
+                      {project.stack?.map((stackItem, index) => (
                         <Badge
                           key={index}
-                          className={`text-black ${
-                            stackColors[stackItem as keyof typeof stackColors]
-                          } hover:bg-gray-400 dark:hover:bg-gray-400 shadow-lg text-center`}
+                          className={`text-black ${stackColors[stackItem as keyof typeof stackColors]
+                            } hover:bg-gray-400 dark:hover:bg-gray-400 shadow-lg text-center`}
                         >
                           {stackItem}
                         </Badge>
@@ -79,6 +80,26 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
                 </div>
               </CarouselItem>
             ))}
+            <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+              <div className="p-1">
+                <Card className="bg-gray-50 dark:bg-gray-900">
+                  <CardHeader>
+                    <CardTitle className="text-gray-950 dark:text-gray-50 text-1xl lg:text-2xl font-bold leading-[30px]">
+                     🚧 Under construction... 🚧
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-gray-950 dark:text-gray-50 pb-0">
+                    <Separator />
+                    <p className="text-base leading-[25px] py-3 text-center">
+                      Take a coffee break and hang tight, I'm working on the
+                      project
+                    </p>
+                    <Separator />
+                  </CardContent>
+                  <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-1 lg:grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center"></CardFooter>
+                </Card>
+              </div>
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious
             variant={"outline"}

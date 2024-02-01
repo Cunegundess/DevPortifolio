@@ -10,9 +10,10 @@ function ContactMePage() {
             Contact Me
           </h1>
           <span className="text-gray-950 dark:text-gray-50 text-1xl lg:text-2xl font-medium leading-[20px] ">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            Hey there! Let's chat code, design, and all things web! From
+            crafting sleek interfaces to solving tech puzzles, I'm here to bring
+            your digital dreams to life. Drop me a line, and let's cook up some
+            cool stuff together! 🚀
           </span>
         </div>
         <div className="w-full lg:w-auto pt-10 px-5 lg:px-20 flex justify-center items-center">
