@@ -34,10 +34,10 @@ export default function ContactForm() {
   function HandleFormFields(data: contactFormFieldsType) {
     if (ContactForm.current) {
       emailjs.sendForm(
-        "service_9u4514f",
-        "template_8niuaq3",
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_SERVICE_ID,
         ContactForm.current,
-        "5BVPUFtFYvjtZz-IB"
+        import.meta.env.VITE_PUBLIC_KEY
       );
     }
     setFormSubmitted(!formSubmitted);
