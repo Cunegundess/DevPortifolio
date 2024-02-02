@@ -11,7 +11,7 @@ import {
 } from "../ui/card";
 
 function CompanyHub() {
-  const [t, i18n] = useTranslation("translation");
+  const [t] = useTranslation("translation");
   return (
     <Card className="bg-zinc-50 dark:bg-zinc-900">
       <CardHeader>

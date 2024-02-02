@@ -9,7 +9,6 @@ import Work from "./pages/Work";
 import "./utils/i18n.ts";
 
 // TODO: Add animations when scroll pages
-// TODO: Add the feature of translating the page
 
 function App() {
   return (

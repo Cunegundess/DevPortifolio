@@ -12,10 +12,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useTranslation } from "react-i18next";
 
-// TODO: Refactor this jsx, wrap up in separate components
-
 function ProjectsPage() {
-  const [t, i18n] = useTranslation("translation");
+  const [t] = useTranslation("translation");
   return (
     <div id="Projects" className="min-h-screen flex flex-col">
       <div className="mt-28 px-5 text-center">

@@ -9,7 +9,7 @@ import ThemeToggle from "../../components/ThemeToggle";
 function NavbarContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
-  const [t, i18n] = useTranslation("translation");
+  const [t] = useTranslation("translation");
 
   const links = [
     { name: t("Navbar.Home"), link: "/" },

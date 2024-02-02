@@ -11,7 +11,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
 export default function ContactForm() {
-  const [t, i18n] = useTranslation("translation");
+  const [t] = useTranslation("translation");
 
   const contactFormSchema = z.object({
     user_name: z.string().min(1, t("ContactPage.zod_user_name")),

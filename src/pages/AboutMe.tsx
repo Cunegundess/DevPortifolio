@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 function AboutMePage() {
-  const [t, i18n] = useTranslation("translation");
+  const [t] = useTranslation("translation");
   return (
     <div id="AboutMe" className="min-h-screen flex flex-col">
       <div className="mt-28 lg:mt-[200px] justify-center lg:items-center px-5 text-center">

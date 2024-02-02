@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import StackIcons from "../components/StackIcons";
 
 function SkillsPage() {
-  const [t, i18n] = useTranslation("translation");
+  const [t] = useTranslation("translation");
   return (
     <div id="Skills" className="min-h-screen flex flex-col lg:flex-row">
       <div className="lg:w-2/5 flex-col lg:ml-8 mt-28 lg:mt-[200px] justify-end lg:items-center lg:pr-4 px-5 text-center">
