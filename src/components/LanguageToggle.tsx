@@ -1,10 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import i18n from "@/utils/i18n";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
 function LanguageToggle() {
-  const [t, i18n] = useTranslation("translation");
-
   function changeLang(lang: string) {
     i18n.changeLanguage(lang);
   }
