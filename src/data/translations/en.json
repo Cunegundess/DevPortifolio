@@ -1,0 +1,59 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "AboutMe": "AboutMe",
+    "Skills": "Skills",
+    "Work": "Work",
+    "Projects": "Projects",
+    "Contact": "Contact"
+  },
+
+  "IntroPage": {
+    "greeting": "Hello World!",
+    "presentation": "I'm Lucas Cunegundes",
+    "job": "Full-Stack Software Developer"
+  },
+
+  "AboutPage": {
+    "title": "About Me",
+    "content": "Full-Stack Software Developer, currently pursuing a degree in Systems Analysis and Development, with a focus on Software Development, particularly working with ReactJS and Django, as well as experience in Linux environments, among other technologies.",
+    "objective": "I aim to contribute to challenging projects, adding value and driving collective success. I'm determined to face new challenges and broaden my experience in the field of software development.",
+    "adjective": "Curious and enthusiastic about exploring new technologies."
+  },
+
+  "SkillsPage": {
+    "title": "Skills",
+    "content": "Technologies / Libraries I've worked with:"
+  },
+
+  "WorkPage": {
+    "title": "Experience",
+    "job": "Full-Stack Software Developer at ",
+    "company": "Youtan",
+    "status": "Internship | Sep 2023 - Present",
+    "job_description": "Developing interactive and responsive user interfaces with TypeScript and React, focusing on reusable components and backend data integration. Building and maintaining web applications using the Django framework for robust systems and business logic, along with Django Rest Framework for API creation. Efficiently querying Microsoft SQL Server and PostgreSQL databases for data manipulation.",
+    "text_button": "Download CV"
+  },
+
+  "ProjectsPage": {
+    "title": "Projects",
+    "social_media_dashboard_description": "This is a dashboard app that displays social media statistics for a fictitious company. The dashboard displays some information about followers and statistics about the users' activity on social media, including engagement rates and post reach.",
+    "bibliotech_description": "The Bibliotech is a comprehensive library management system designed to simplify and enhance library administration. This project aims to provide a comprehensive solution for managing collections, loans, and library users",
+    "company_hub_description": "This project is a dynamic and collaborative platform dedicated to optimizing workflow and communication within your company. It offers a comprehensive suite of tools and features to facilitate efficient project management",
+    "under_construction_title": "🚧 Under construction... 🚧",
+    "under_construction_description": "Take a coffee break and hang tight, I'm working on the project"
+  },
+
+  "ContactPage": {
+    "title": "Contact Me",
+    "description": "Hey there! Let's chat code, design, and all things web! From crafting sleek interfaces to solving tech puzzles, I'm here to bring your digital dreams to life. Drop me a line, and let's cook up some cool stuff together!",
+    "name_input": "Enter your name",
+    "email_input": "Enter your email",
+    "message_input": "Type your message",
+    "toast_title": "Your message was sent!!",
+    "toast_description": "Thank you, I'll respond right away",
+    "zod_user_name": "Oops! Looks like you forgot to tell me your name 😅",
+    "zod_user_email": "Hmm... This email looks weird 🤔 Are you sure that's your email?",
+    "zod_user_message": "Your message is empty... 📝"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "AboutMe": "Sobre Mim",
+    "Skills": "Habilidades",
+    "Work": "Experiência",
+    "Projects": "Projetos",
+    "Contact": "Contato"
+  },
+
+  "IntroPage": {
+    "greeting": "Olá Mundo!",
+    "presentation": "Sou o Lucas Cunegundes",
+    "job": "Desenvolvedor de Software Full-Stack"
+  },
+
+  "AboutPage": {
+    "title": "Sobre mim",
+    "content": "Desenvolvedor de Software Full-Stack, atualmente cursando graduação em Análise e Desenvolvimento de Sistemas, com foco em Desenvolvimento de Software, particularmente trabalhando com ReactJS e Django, além de experiência em ambientes Linux, entre outras tecnologias.",
+    "objective": "Busco contribuir em projetos desafiadores, agregando valor e impulsionando o sucesso coletivo. Determinado a enfrentar novos desafios e expandir minha experiência no campo do desenvolvimento de software.",
+    "adjective": "Curioso e entusiasta em explorar novas tecnologias"
+  },
+
+  "SkillsPage": {
+    "title": "Habilidades",
+    "content": "Tecnologias / Bibliotecas que já trabalhei:"
+  },
+
+  "WorkPage": {
+    "title": "Experiência",
+    "job": "Desenvolvedor de Software Full-Stack na ",
+    "company": "Youtan",
+    "status": "Estágio | Set 2023 - Atualmente",
+    "job_description": "Desenvolvendo interfaces de usuário interativas e responsivas com TypeScript e React, com foco em componentes reutilizáveis e integração de dados no backend. Construindo e mantendo aplicações web utilizando o framework Django para sistemas robustos e lógica de negócios, juntamente com o Django Rest Framework para criação de APIs. Consultando eficientemente bancos de dados Microsoft SQL Server e PostgreSQL para manipulação de dados.",
+    "text_button": "Baixar CV"
+  },
+
+  "ProjectsPage": {
+    "title": "Projetos",
+    "social_media_dashboard_description": "Este é um aplicativo de painel que exibe estatísticas de mídia social para uma empresa fictícia. O painel exibe algumas informações sobre seguidores e estatísticas sobre a atividade dos usuários nas mídias sociais, incluindo taxas de engajamento e alcance de postagens.",
+    "bibliotech_description": "O Bibliotech é um sistema abrangente de gerenciamento de bibliotecas projetado para simplificar e aprimorar a administração de bibliotecas. Este projeto tem como objetivo fornecer uma solução abrangente para o gerenciamento de coleções, empréstimos e usuários da biblioteca",
+    "company_hub_description": "Este projeto é uma plataforma dinâmica e colaborativa dedicada à otimização de fluxo de trabalho e comunicação dentro da sua empresa. Ele oferece um conjunto abrangente de ferramentas e recursos para facilitar o gerenciamento eficiente de projetos.",
+    "under_construction_title": "🚧 Em construção... 🚧",
+    "under_construction_description": "Pegue um café e se aconchegue, estou trabalhando no projeto"
+  },
+
+  "ContactPage": {
+    "title": "Entre em contato",
+    "description": "Olá! Vamos conversar sobre código, design e tudo relacionado à web! Desde criar interfaces elegantes até resolver quebra-cabeças técnicos, estou aqui para transformar seus sonhos digitais em realidade. Me mande uma mensagem e vamos criar coisas incríveis juntos!",
+    "name_input": "Insira seu nome",
+    "email_input": "Insira seu email",
+    "message_input": "Insira sua mensagem",
+    "toast_title": "Sua mensagem foi enviada!!",
+    "toast_description": "Muito obrigado, irei responder já já",
+    "zod_user_name": "Oops! Parece que você esqueceu de me contar seu nome 😅",
+    "zod_user_email": "Hmm... Que email estranho 🤔 Tem certeza que é seu email?",
+    "zod_user_message": "Pelo jeito você esqueceu de escrever sua mensagem... 📝"
+  }
+}

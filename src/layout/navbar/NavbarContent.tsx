@@ -1,5 +1,7 @@
+import LanguageToggle from "@/components/LanguageToggle";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { IoClose } from "react-icons/io5";
 import { LuMoreVertical } from "react-icons/lu";
 import ThemeToggle from "../../components/ThemeToggle";
@@ -7,14 +9,15 @@ import ThemeToggle from "../../components/ThemeToggle";
 function NavbarContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [t, i18n] = useTranslation("translation");
 
   const links = [
-    { name: "Home", link: "/" },
-    { name: "AboutMe", link: "/" },
-    { name: "Skills", link: "/" },
-    { name: "Work", link: "/" },
-    { name: "Projects", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: t("Navbar.Home"), link: "/" },
+    { name: t("Navbar.AboutMe"), link: "/" },
+    { name: t("Navbar.Skills"), link: "/" },
+    { name: t("Navbar.Work"), link: "/" },
+    { name: t("Navbar.Projects"), link: "/" },
+    { name: t("Navbar.Contact"), link: "/" },
   ];
 
   useEffect(() => {
@@ -38,11 +41,11 @@ function NavbarContent() {
   return (
     <div className="flex flex-row gap-8 font-medium items-center relative ">
       {isMenuOpen ? (
-        <ul className="lg:hidden absolute top-10 right-0 bg-gray-50 dark:bg-gray-900 py-2 px-5 shadow-lg rounded-md">
+        <ul className="lg:hidden absolute top-10 right-0 bg-zinc-50 dark:bg-zinc-900 py-2 px-5 shadow-lg rounded-md">
           {links.map((link) => (
             <li
               key={link.name}
-              className="mb-2  hover:text-gray-500 dark:hover:text-gray-400"
+              className="mb-2  hover:text-zinc-500 dark:hover:text-zinc-400"
             >
               <a href={`#${link.name}`}>{link.name} </a>
             </li>
@@ -53,7 +56,7 @@ function NavbarContent() {
           {links.map((link) => (
             <li
               key={link.name}
-              className="hover:text-gray-500 dark:hover:text-gray-400"
+              className="hover:text-zinc-500 dark:hover:text-zinc-400"
             >
               <a href={`#${link.name}`}>{link.name}</a>
             </li>
@@ -61,11 +64,10 @@ function NavbarContent() {
         </ul>
       )}
       <ThemeToggle />
-      <img src="images/brazil-flag-icon-32.png"></img>
-      <img src="images/united-states-of-america-flag-icon-32.png"></img>
+      <LanguageToggle />
       <motion.button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="lg:hidden text-gray-950 dark:text-gray-50"
+        className="lg:hidden text-zinc-950 dark:text-zinc-50"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >

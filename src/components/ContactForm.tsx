@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 import { z } from "zod";
 import { Button } from "./ui/button";
@@ -9,19 +10,17 @@ import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
-const contactFormSchema = z.object({
-  user_name: z
-    .string()
-    .min(1, "Oops! Looks like you forgot to tell me your name 😅"),
-  user_email: z
-    .string()
-    .email(`Hmm... This email looks weird 🤔 Are you sure that's your email?`),
-  message: z.string().min(1, "Your message is empty... 📝"),
-});
-
-type contactFormFieldsType = z.infer<typeof contactFormSchema>;
-
 export default function ContactForm() {
+  const [t, i18n] = useTranslation("translation");
+
+  const contactFormSchema = z.object({
+    user_name: z.string().min(1, t("ContactPage.zod_user_name")),
+    user_email: z.string().email(t("ContactPage.zod_user_email")),
+    message: z.string().min(1, t("ContactPage.zod_user_message")),
+  });
+
+  type contactFormFieldsType = z.infer<typeof contactFormSchema>;
+
   const {
     register,
     handleSubmit,
@@ -42,8 +41,8 @@ export default function ContactForm() {
       );
     }
     setFormSubmitted(!formSubmitted);
-    toast("🥳 Your message was sent!! ", {
-      description: "Thank you, I'll respond right away",
+    toast(`🥳 ${t("ContactPage.toast_title")} `, {
+      description: t("ContactPage.toast_description"),
       duration: 2000,
       action: {
         label: "X",
@@ -54,18 +53,18 @@ export default function ContactForm() {
   }
 
   return (
-    <Card className="rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+    <Card className="rounded-lg shadow-lg bg-zinc-50 dark:bg-zinc-900">
       <CardContent className="p-0">
         <form
           ref={ContactForm}
           onSubmit={handleSubmit(HandleFormFields)}
-          className="flex flex-col mx-auto p-4 gap-2"
+          className="flex flex-col mx-auto p-4 gap-3"
         >
           <Input
             type="text"
-            placeholder="Enter your name"
+            placeholder={t("ContactPage.name_input")}
             id="name"
-            className="w-full p-2  bg-gray-200 dark:bg-gray-700 rounded"
+            className="w-full p-2  bg-zinc-200 dark:bg-zinc-700 rounded"
             {...register("user_name", { required: true })}
           />
           {errors.user_name && (
@@ -75,9 +74,9 @@ export default function ContactForm() {
           )}
           <Input
             type="email"
-            placeholder="Enter your email"
+            placeholder={t("ContactPage.email_input")}
             id="email"
-            className="w-full p-2  bg-gray-200 dark:bg-gray-700 rounded"
+            className="w-full p-2  bg-zinc-200 dark:bg-zinc-700 rounded"
             {...register("user_email", { required: true })}
           />
           {errors.user_email && (
@@ -86,8 +85,8 @@ export default function ContactForm() {
             </p>
           )}
           <Textarea
-            placeholder="Type your message here"
-            className="w-full h-20 p-2  bg-gray-200 dark:bg-gray-700 rounded"
+            placeholder={t("ContactPage.message_input")}
+            className="w-full h-20 p-2  bg-zinc-200 dark:bg-zinc-700 rounded"
             id="message"
             {...register("message", { required: true })}
           />
