@@ -35,7 +35,7 @@
     "text_button": "Download CV"
   },
 
-  "CV": "public/cv/LucasCunegundes-curriculo-en.pdf",
+  "CV": "cv/LucasCunegundes-curriculo-en.pdf",
 
   "ProjectsPage": {
     "title": "Projects",
