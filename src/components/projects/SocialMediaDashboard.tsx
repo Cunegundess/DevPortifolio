@@ -35,13 +35,13 @@ function SocialMediaDashboard() {
       </CardContent>
 
       <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-1 lg:grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
-        <Badge className="text-black bg-cyan-400 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+        <Badge className="text-black bg-cyan-300 hover:bg-cyan-400 dark:hover:bg-cyan-500 transition shadow-lg text-center">
           ReactJS
         </Badge>
-        <Badge className="text-black bg-blue-600 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+        <Badge className="text-black bg-blue-500 hover:bg-blue-600 dark:hover:bg-blue-600 transition shadow-lg text-center">
           Typescript
         </Badge>
-        <Badge className="text-black bg-purple-600 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+        <Badge className="text-black bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-600 transition shadow-lg text-center">
           SCSS
         </Badge>
       </CardFooter>

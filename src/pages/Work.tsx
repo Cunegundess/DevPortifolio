@@ -1,5 +1,5 @@
+import DownloadCV from "@/components/download-cv";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -14,8 +14,12 @@ import { HiLink } from "react-icons/hi";
 
 function WorkPage() {
   const [t] = useTranslation("translation");
+
   return (
-    <div id="Work" className="min-h-screen flex flex-col lg:flex-row">
+    <div
+      id={t("Navbar.Work")}
+      className="min-h-screen flex flex-col lg:flex-row"
+    >
       <div className="lg:w-2/5 flex-col lg:ml-8 mt-28 lg:mt-[200px] justify-end lg:items-center lg:pr-4 px-5 text-center">
         <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold pb-5 lg:pb-5">
           {t("WorkPage.title")}
@@ -48,26 +52,24 @@ function WorkPage() {
             <Separator />
           </CardContent>
           <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-3 lg:grid-rows-3 grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
-            <Badge className="text-black bg-cyan-300 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+            <Badge className="text-black bg-cyan-300 hover:bg-cyan-400 dark:hover:bg-cyan-500 transition shadow-lg text-center">
               ReactJS
             </Badge>
-            <Badge className="text-black bg-blue-500 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+            <Badge className="text-black bg-blue-500 hover:bg-blue-600 dark:hover:bg-blue-600 transition shadow-lg text-center">
               Typescript
             </Badge>
-            <Badge className="text-black bg-green-600 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+            <Badge className="text-black bg-green-600 hover:bg-green-700 dark:hover:bg-green-700 transition shadow-lg text-center">
               Django
             </Badge>
-            <Badge className="text-black bg-blue-500 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+            <Badge className="text-black bg-blue-500 hover:bg-blue-600 dark:hover:bg-blue-600 transition shadow-lg text-center">
               Docker
             </Badge>
-            <Badge className="text-black bg-red-500 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center col-span-2">
+            <Badge className="text-black bg-red-600 hover:bg-red-700 dark:hover:bg-red-700 transition shadow-lg text-center col-span-2">
               Microsoft SQL Server
             </Badge>
           </CardFooter>
         </Card>
-        <Button className="self-center font-bold bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition my-5">
-          {t("WorkPage.text_button")}
-        </Button>
+        <DownloadCV />
       </div>
     </div>
   );

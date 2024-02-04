@@ -35,13 +35,13 @@ function Bibliotech() {
       </CardContent>
 
       <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-1 lg:grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
-        <Badge className="text-black bg-green-600 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+        <Badge className="text-black bg-green-600 hover:bg-green-700 dark:hover:bg-green-700 transition shadow-lg text-center">
           Django
         </Badge>
-        <Badge className="text-black bg-red-600 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+        <Badge className="text-black bg-red-600 hover:bg-red-700 dark:hover:bg-red-700 transition shadow-lg text-center">
           Django REST
         </Badge>
-        <Badge className="text-black bg-blue-600 hover:bg-zinc-400 dark:hover:bg-zinc-400 shadow-lg text-center">
+        <Badge className="text-black bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-700 transition shadow-lg text-center">
           PostgreSQL
         </Badge>
       </CardFooter>

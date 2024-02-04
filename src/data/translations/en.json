@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "Home": "Home",
-    "AboutMe": "AboutMe",
+    "AboutMe": "About Me",
     "Skills": "Skills",
     "Work": "Work",
     "Projects": "Projects",
@@ -9,7 +9,7 @@
   },
 
   "IntroPage": {
-    "greeting": "Hello World!",
+    "greeting": "<Hello World! />",
     "presentation": "I'm Lucas Cunegundes",
     "job": "Full-Stack Software Developer"
   },
@@ -34,6 +34,8 @@
     "job_description": "Developing interactive and responsive user interfaces with TypeScript and React, focusing on reusable components and backend data integration. Building and maintaining web applications using the Django framework for robust systems and business logic, along with Django Rest Framework for API creation. Efficiently querying Microsoft SQL Server and PostgreSQL databases for data manipulation.",
     "text_button": "Download CV"
   },
+
+  "CV": "public/cv/LucasCunegundes-Currículo-en.pdf",
 
   "ProjectsPage": {
     "title": "Projects",

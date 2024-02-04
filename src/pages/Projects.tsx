@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 function ProjectsPage() {
   const [t] = useTranslation("translation");
   return (
-    <div id="Projects" className="min-h-screen flex flex-col">
+    <div id={t("Navbar.Projects")} className="min-h-screen flex flex-col">
       <div className="mt-28 px-5 text-center">
         <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold pb-5 lg:pb-5">
           {t("ProjectsPage.title")}
