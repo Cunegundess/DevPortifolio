@@ -14,96 +14,96 @@ import { SiMicrosoftsqlserver } from "react-icons/si";
 
 function StackIcons() {
   return (
-    <div className="grid grid-rows-5 md:grid-rows-3 lg:grid-rows-2 grid-flow-col gap-10">
+    <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-3 md:gap-6 lg:gap-6 lg:px-6 py-4">
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://react.dev/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 shadow-md "
       >
-        <BiLogoReact className="text-cyan-400 " size={64} />
+        <BiLogoReact className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-amber-400 to-yellow-500 shadow-md "
       >
-        <BiLogoJavascript className="text-amber-400 " size={64} />
+        <BiLogoJavascript className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://www.typescriptlang.org/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 shadow-md "
       >
-        <BiLogoTypescript className="text-blue-600 " size={64} />
+        <BiLogoTypescript className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://www.python.org/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-800 to-blue-900 shadow-md "
       >
-        <BiLogoPython className="text-blue-900 " size={64} />
+        <BiLogoPython className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://www.djangoproject.com/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-green-600 to-green-700 shadow-md "
       >
-        <BiLogoDjango className="text-green-700 " size={64} />
+        <BiLogoDjango className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://www.microsoft.com/en-us/sql-server/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-red-700 shadow-md "
       >
-        <SiMicrosoftsqlserver className="text-red-700 " size={64} />
+        <SiMicrosoftsqlserver className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://www.postgresql.org/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 shadow-md "
       >
-        <BiLogoPostgresql className="text-blue-700 " size={64} />
+        <BiLogoPostgresql className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://www.docker.com/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-400 to-blue-500 shadow-md "
       >
-        <BiLogoDocker className="text-blue-500 " size={64} />
+        <BiLogoDocker className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://tailwindcss.com/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-cyan-600 to-cyan-700 shadow-md "
       >
-        <BiLogoTailwindCss className="text-cyan-700 " size={64} />
+        <BiLogoTailwindCss className="text-white" size={"70%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         href="https://getbootstrap.com/"
         target="_blank"
-        className="shadow-lg rounded-md bg-zinc-50 dark:bg-zinc-900 p-1"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-purple-700 shadow-md "
       >
-        <BiLogoBootstrap className="text-purple-700 " size={64} />
+        <BiLogoBootstrap className="text-white" size={"70%"} />
       </motion.a>
     </div>
   );

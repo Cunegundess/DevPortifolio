@@ -13,7 +13,7 @@ function IconsContact() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <BiLogoLinkedin className="text-zinc-950 dark:text-zinc-50" size={26} />
+        <BiLogoLinkedin className="text-zinc-950 dark:text-zinc-50" size={30} />
       </motion.a>
 
       <motion.a
@@ -23,7 +23,7 @@ function IconsContact() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <FaGithubAlt className="text-zinc-950 dark:text-zinc-50" size={26} />
+        <FaGithubAlt className="text-zinc-950 dark:text-zinc-50" size={30} />
       </motion.a>
       <motion.a
         href="mailto:lucascsantana6@gmail.com"
@@ -32,7 +32,7 @@ function IconsContact() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <HiOutlineMail className="text-zinc-950 dark:text-zinc-50" size={26} />
+        <HiOutlineMail className="text-zinc-950 dark:text-zinc-50" size={30} />
       </motion.a>
     </div>
   );
