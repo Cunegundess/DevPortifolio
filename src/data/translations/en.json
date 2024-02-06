@@ -9,9 +9,8 @@
   },
 
   "IntroPage": {
-    "greeting": "<Hello World! />",
-    "presentation": "I'm Lucas Cunegundes",
-    "job": "Full-Stack Software Developer"
+    "greeting": "Hey, I'm",
+    "presentation": "I transform ideas into reality through code and design"
   },
 
   "AboutPage": {

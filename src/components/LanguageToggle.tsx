@@ -14,14 +14,20 @@ function LanguageToggle() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <img src="images/brazil-flag-icon-32.png"></img>
+        <img
+          src="images/brazil-flag-icon-32.png"
+          className="rounded-sm h-[20px] w-[30px]"
+        ></img>
       </motion.button>
       <motion.button
         onClick={() => changeLang("en")}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <img src="images/united-states-of-america-flag-icon-32.png"></img>
+        <img
+          src="images/united-states-of-america-flag-icon-32.png"
+          className="rounded-sm h-[20px] w-[30px]"
+        ></img>
       </motion.button>
     </>
   );

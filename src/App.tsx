@@ -1,5 +1,5 @@
 import { Toaster } from "./components/ui/sonner";
-import { Navbar } from "./layout/navbar";
+import { Navbar } from "./layout/navbar/index.ts";
 import AboutMePage from "./pages/AboutMe";
 import ContactMePage from "./pages/ContactMe";
 import { IntroPage } from "./pages/Intro";
@@ -12,19 +12,17 @@ import "./utils/i18n.ts";
 
 function App() {
   return (
-    <main className="h-screen0 dark:bg-zinc-950">
+    <main className="dark:bg-slate-950">
       <Navbar.Root>
         <Navbar.Logo />
         <Navbar.Content />
       </Navbar.Root>
-
       <IntroPage />
       <AboutMePage />
       <SkillsPage />
-      <Work />
       <ProjectsPage />
+      <Work />
       <ContactMePage />
-
       <Toaster />
     </main>
   );

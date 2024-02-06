@@ -56,7 +56,7 @@ function NavbarContent() {
           {links.map((link) => (
             <li
               key={link.name}
-              className="hover:text-zinc-500 dark:hover:text-zinc-400"
+              className="hover:text-zinc-500 dark:hover:text-zinc-400 tracking-wide"
             >
               <a href={`#${link.name}`}>{link.name}</a>
             </li>
