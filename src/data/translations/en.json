@@ -9,15 +9,16 @@
   },
 
   "IntroPage": {
-    "greeting": "Hey, I'm",
+    "greeting": "Hey, I'm ",
     "presentation": "I transform ideas into reality through code and design"
   },
 
   "AboutPage": {
     "title": "About Me",
-    "content": "Full-Stack Software Developer, currently pursuing a degree in Systems Analysis and Development, with a focus on Software Development, particularly working with ReactJS and Django, as well as experience in Linux environments, among other technologies.",
-    "objective": "I aim to contribute to challenging projects, adding value and driving collective success. I'm determined to face new challenges and broaden my experience in the field of software development.",
-    "adjective": "Curious and enthusiastic about exploring new technologies."
+    "greetings": "Hi! I'm a",
+    "job": "Full Stack Developer",
+    "about": "especializing in frontend development. I enjoy coming up with some ideas and transforming them into cool web applications.",
+    "objective": "I am looking for exciting challenges where I can add value and promote positive changes. I am determined to overcome obstacles and deepen my skills in the field."
   },
 
   "SkillsPage": {

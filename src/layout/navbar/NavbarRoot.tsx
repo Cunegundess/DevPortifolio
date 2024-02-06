@@ -6,7 +6,7 @@ interface NavbarRootProps {
 
 function NavbarRoot({ children }: NavbarRootProps) {
   return (
-    <nav className="flex fixed z-50 w-full h-16 justify-between items-center px-5 lg:px-20 text-zinc-950 bg-white dark:bg-slate-950 dark:text-zinc-50">
+    <nav className="flex fixed z-50 w-full h-16 justify-between items-center px-5 lg:px-10 text-zinc-950 bg-white dark:bg-slate-950 dark:text-zinc-50">
       {children}
     </nav>
   );

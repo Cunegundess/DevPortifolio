@@ -3,23 +3,30 @@ import { useTranslation } from "react-i18next";
 function AboutMePage() {
   const [t] = useTranslation("translation");
   return (
-    <div id={t("Navbar.AboutMe")} className="min-h-screen flex flex-col">
-      <div className="mt-28 lg:mt-[200px] justify-center lg:items-center px-5 text-center">
-        <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold ">
-          {t("AboutPage.title")}
-        </h1>
+    <section
+      id={t("Navbar.AboutMe")}
+      className="min-h-screen flex flex-col lg:mx-36"
+    >
+      <div className="justify-center items-center p-10 mx-10 mt-28">
+        <div className="flex flex-col gap-2 leading-[30px]">
+          <h1 className="text-xl font-medium">
+            <span className="drop-shadow-lg text-2xl">🧑🏻‍💻</span>{" "}
+            {t("AboutPage.title")}
+          </h1>
+          <span className="font-bold text-2xl mt-16">
+            {t("AboutPage.greetings")}{" "}
+            <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text">
+              {t("AboutPage.job")}
+            </span>{" "}
+            {t("AboutPage.about")}
+          </span>{" "}
+          <span className="text-xl font-light mt-5">
+            <span className="drop-shadow-lg text-2xl">🎯</span>{" "}
+            {t("AboutPage.objective")}
+          </span>
+        </div>
       </div>
-
-      <div className="justify-center items-center p-10 text-center mx-10">
-        <span className="text-zinc-950 dark:text-zinc-50 text-xl font-medium lg:text-1xl leading-[30px] ">
-          🧑🏻‍💻 {t("AboutPage.content")}
-          <div className="py-1" />
-          🚀 {t("AboutPage.objective")}
-          <div className="py-1" />
-          🤔 {t("AboutPage.adjective")}
-        </span>
-      </div>
-    </div>
+    </section>
   );
 }
 

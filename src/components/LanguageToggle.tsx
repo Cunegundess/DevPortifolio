@@ -8,7 +8,7 @@ function LanguageToggle() {
   }
 
   return (
-    <>
+    <div className="flex gap-5 items-center justify-center">
       <motion.button
         onClick={() => changeLang("pt")}
         whileHover={{ scale: 1.1 }}
@@ -29,7 +29,7 @@ function LanguageToggle() {
           className="rounded-sm h-[20px] w-[30px]"
         ></img>
       </motion.button>
-    </>
+    </div>
   );
 }
 

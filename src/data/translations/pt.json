@@ -9,15 +9,16 @@
   },
 
   "IntroPage": {
-    "greeting": "Olá, Sou o",
-    "presentation": "Transformo ideias em realidade através de códigos e designs"
+    "greeting": "Olá, Sou o ",
+    "presentation": "Transformo ideias em realidade através de código e design"
   },
 
   "AboutPage": {
     "title": "Sobre mim",
-    "content": "Desenvolvedor de Software Full-Stack, atualmente cursando graduação em Análise e Desenvolvimento de Sistemas, com foco em Desenvolvimento de Software, particularmente trabalhando com ReactJS e Django, além de experiência em ambientes Linux, entre outras tecnologias.",
-    "objective": "Busco contribuir em projetos desafiadores, agregando valor e impulsionando o sucesso coletivo. Determinado a enfrentar novos desafios e expandir minha experiência no campo do desenvolvimento de software.",
-    "adjective": "Curioso e entusiasta em explorar novas tecnologias"
+    "greetings": "Olá! Sou um",
+    "job": "Desenvolvedor Full Stack",
+    "about": "se especializando em desenvolvimento frontend. Gosto de criar algumas ideias e transformá-las em aplicativos web incríveis.",
+    "objective": "Estou em busca de desafios empolgantes, onde posso agregar valor e promover mudanças positivas. Estou determinado a superar obstáculos e aprofundar minhas habilidades na área."
   },
 
   "SkillsPage": {
