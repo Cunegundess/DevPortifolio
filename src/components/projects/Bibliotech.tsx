@@ -1,51 +1,55 @@
-import { Separator } from "@/components/ui/separator";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaGithubAlt } from "react-icons/fa";
 import { HiLink } from "react-icons/hi";
 import { Badge } from "../ui/badge";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
 
 function Bibliotech() {
   const [t] = useTranslation("translation");
   return (
-    <Card className="bg-zinc-50 dark:bg-zinc-900">
-      <CardHeader>
-        <CardTitle className="text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-bold leading-[30px]">
+    <div className="flex gap-10">
+      <div className="w-1/2">
+        <img
+          className="w-full h-full rounded-lg shadow-xl"
+          src="images/bibliotech.png"
+        />
+      </div>
+      <div className="flex flex-col w-1/2 mx-5 justify-center">
+        <h2 className="flex flex-row items-center text-3xl font-bold gap-1">
           <a
-            href="https://github.com/Cunegundess/BiblioTech"
+            href="https://github.com/Cunegundess/Bibliotech"
             target="_blank"
             className="hover:text-blue-500 hover:underline hover:decoration-3 inline-flex items-center gap-1"
           >
-            BiblioTech <HiLink size={20} />
-          </a>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="text-zinc-950 dark:text-zinc-50 text-center pb-0">
-        <Separator />
-        <img className="h-60 w-full" src="images/bibliotech.png" />
-        <p className="lg:text-left text-base leading-[25px] py-3">
+            Bibliotech <HiLink size={20} />
+          </a>{" "}
+          <motion.a
+            href="https://www.github.com/Cunegundess/Bibliotech"
+            target="_blank"
+            className="flex gap-1 drop-shadow-lg p-1 h-fit w-fit "
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaGithubAlt className="text-black dark:text-white " size={25} />
+          </motion.a>
+        </h2>
+
+        <p className="lg:text-left text-medium leading-[25px] py-4">
           {t("ProjectsPage.bibliotech_description")}
         </p>
-        <Separator />
-      </CardContent>
-
-      <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-1 lg:grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
-        <Badge className="text-black bg-green-600 hover:bg-green-700 dark:hover:bg-green-700 transition shadow-lg text-center">
-          Django
-        </Badge>
-        <Badge className="text-black bg-red-600 hover:bg-red-700 dark:hover:bg-red-700 transition shadow-lg text-center">
-          Django REST
-        </Badge>
-        <Badge className="text-black bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-700 transition shadow-lg text-center">
-          PostgreSQL
-        </Badge>
-      </CardFooter>
-    </Card>
+        <div className="flex gap-5 items-center justify-center pt-2">
+          <Badge className="text-black bg-green-600 hover:bg-green-700 dark:hover:bg-green-700 transition shadow-lg text-center">
+            Django
+          </Badge>
+          <Badge className="text-black bg-red-600 hover:bg-red-700 dark:hover:bg-red-700 transition shadow-lg text-center">
+            Django REST
+          </Badge>
+          <Badge className="text-black bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-700 transition shadow-lg text-center">
+            PostgreSQL
+          </Badge>
+        </div>
+      </div>
+    </div>
   );
 }
 

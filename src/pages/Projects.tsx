@@ -2,60 +2,27 @@ import Bibliotech from "@/components/projects/Bibliotech";
 import CompanyHub from "@/components/projects/CompanyHub";
 import SocialMediaDashboard from "@/components/projects/SocialMediaDashboard";
 import UnderConstruction from "@/components/projects/UnderConstruction";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import { useTranslation } from "react-i18next";
 
 function ProjectsPage() {
   const [t] = useTranslation("translation");
   return (
-    <div id={t("Navbar.Projects")} className="min-h-screen flex flex-col">
-      <div className="mt-28 px-5 text-center">
-        <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold pb-5 lg:pb-5">
-          {t("ProjectsPage.title")}
-        </h1>
+    <section id={t("Navbar.Projects")} className="min-h-screen flex flex-col">
+      <div className="justify-center items-center p-10 mx-5 mt-28 bg-gray-200 dark:bg-slate-950 rounded-xl shadow-xl">
+        <div className="flex flex-col gap-2 leading-[30px] lg:mx-36">
+          <h1 className="text-xl font-medium mx-5">
+            <span className="drop-shadow-lg text-xl lg:text-2xl">🧑🏻‍💻</span>{" "}
+            {t("ProjectsPage.title")}
+          </h1>
+          <div className="flex flex-col space-y-60 mt-16">
+            <SocialMediaDashboard />
+            <Bibliotech />
+            <CompanyHub />
+            <UnderConstruction />
+          </div>
+        </div>
       </div>
-      <div className="mt-8 text-center mx-20">
-        <Carousel
-          plugins={[Autoplay({ delay: 2000 })]}
-          className="w-full px-5 text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-medium leading-[20px]"
-        >
-          <CarouselContent>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-              <div className="p-1">
-                <SocialMediaDashboard />
-              </div>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-              <div className="p-1">
-                <Bibliotech />
-              </div>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-              <div className="p-1">
-                <CompanyHub />
-              </div>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-              <div className="p-1">
-                <UnderConstruction />
-              </div>
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious
-            variant={"outline"}
-            className="rounded-md shadow-lg"
-          />
-          <CarouselNext variant={"outline"} className="rounded-md shadow-lg" />
-        </Carousel>
-      </div>
-    </div>
+    </section>
   );
 }
 

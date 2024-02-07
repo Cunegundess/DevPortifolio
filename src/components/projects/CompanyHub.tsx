@@ -1,51 +1,55 @@
-import { Separator } from "@/components/ui/separator";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaGithubAlt } from "react-icons/fa";
 import { HiLink } from "react-icons/hi";
 import { Badge } from "../ui/badge";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
 
 function CompanyHub() {
   const [t] = useTranslation("translation");
   return (
-    <Card className="bg-zinc-50 dark:bg-zinc-900">
-      <CardHeader>
-        <CardTitle className="text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-bold leading-[30px]">
+    <div className="flex gap-10">
+      <div className="flex flex-col w-1/2 mx-5 justify-center">
+        <h2 className="flex flex-row items-center text-3xl font-bold gap-1">
           <a
             href="https://github.com/Cunegundess/CompanyHub"
             target="_blank"
             className="hover:text-blue-500 hover:underline hover:decoration-3 inline-flex items-center gap-1"
           >
             CompanyHub <HiLink size={20} />
-          </a>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="text-zinc-950 dark:text-zinc-50 text-center pb-0">
-        <Separator />
-        <img className="h-60 w-full" src="images/companyhub.png" />
-        <p className="lg:text-left text-base leading-[25px] py-3">
+          </a>{" "}
+          <motion.a
+            href="https://www.github.com/Cunegundess/CompanyHub"
+            target="_blank"
+            className="flex gap-1 drop-shadow-lg p-1 h-fit w-fit "
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaGithubAlt className="text-black dark:text-white " size={25} />
+          </motion.a>
+        </h2>
+
+        <p className="lg:text-left text-medium leading-[25px] py-4">
           {t("ProjectsPage.company_hub_description")}
         </p>
-        <Separator />
-      </CardContent>
-
-      <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-1 lg:grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
-        <Badge className="text-black bg-cyan-300 hover:bg-cyan-400 dark:hover:bg-cyan-500 transition shadow-lg text-center">
-          ReactJS
-        </Badge>
-        <Badge className="text-black bg-blue-500 hover:bg-blue-600 dark:hover:bg-blue-600 transition shadow-lg text-center">
-          Typescript
-        </Badge>
-        <Badge className="text-black bg-cyan-400 hover:bg-cyan-500 dark:hover:bg-cyan-500 transition shadow-lg text-center">
-          TailwindCSS
-        </Badge>
-      </CardFooter>
-    </Card>
+        <div className="flex gap-5 items-center justify-center pt-2">
+          <Badge className="text-black bg-cyan-300 hover:bg-cyan-400 dark:hover:bg-cyan-500 transition shadow-lg text-center">
+            ReactJS
+          </Badge>
+          <Badge className="text-black bg-blue-500 hover:bg-blue-600 dark:hover:bg-blue-600 transition shadow-lg text-center">
+            Typescript
+          </Badge>
+          <Badge className="text-black bg-cyan-400 hover:bg-cyan-500 dark:hover:bg-cyan-500 transition shadow-lg text-center">
+            TailwindCSS
+          </Badge>
+        </div>
+      </div>
+      <div className="w-1/2">
+        <img
+          className="w-full h-full rounded-lg shadow-xl"
+          src="images/companyhub.png"
+        />
+      </div>
+    </div>
   );
 }
 
