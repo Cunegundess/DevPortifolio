@@ -53,7 +53,7 @@ export default function ContactForm() {
   }
 
   return (
-    <Card className="rounded-lg shadow-lg">
+    <Card className="rounded-lg shadow-lg w-full h-full">
       <CardContent className="p-0">
         <form
           ref={ContactForm}
@@ -64,7 +64,7 @@ export default function ContactForm() {
             type="text"
             placeholder={t("ContactPage.name_input")}
             id="name"
-            className="w-full p-2 rounded bg-slate-100 focus:border-blue-500 transition"
+            className="w-full p-2 rounded bg-slate-100 dark:bg-slate-950 focus:border-blue-500 transition"
             {...register("user_name", { required: true })}
           />
           {errors.user_name && (
@@ -76,7 +76,7 @@ export default function ContactForm() {
             type="email"
             placeholder={t("ContactPage.email_input")}
             id="email"
-            className="w-full p-2 rounded bg-slate-100 focus:border-blue-500 transition"
+            className="w-full p-2 rounded bg-slate-100 dark:bg-slate-950 focus:border-blue-500 transition"
             {...register("user_email", { required: true })}
           />
           {errors.user_email && (
@@ -86,7 +86,7 @@ export default function ContactForm() {
           )}
           <Textarea
             placeholder={t("ContactPage.message_input")}
-            className="w-full h-20 p-2 rounded bg-slate-100 focus:border-blue-500 transition"
+            className="w-full h-20 p-2 rounded bg-slate-100 dark:bg-slate-950 focus:border-blue-500 transition"
             id="message"
             {...register("message", { required: true })}
           />

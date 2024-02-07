@@ -16,7 +16,7 @@ function HelloText() {
         </div>
       </div>
       <div className="flex flex-col gap-3 text-center w-fit h-fit">
-        <h1 className="font-extrabold text-4xl lg:text-5xl tracking-tight">
+        <h1 className="font-extrabold text-5xl tracking-tight">
           {t("IntroPage.greeting")}{" "}
           <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text">
             Lucas Cunegundes

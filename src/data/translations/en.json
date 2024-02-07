@@ -1,11 +1,12 @@
 {
   "Navbar": {
-    "Home": "Home",
-    "AboutMe": "About Me",
-    "Skills": "Skills",
-    "Work": "Experience",
-    "Projects": "Projects",
-    "Contact": "Contact"
+    "Home": "home",
+    "AboutMe": "about me",
+    "Skills": "skills",
+    "Work": "experience",
+    "Projects": "projects",
+    "Contact": "contact",
+    "Message": "message"
   },
 
   "IntroPage": {
@@ -60,5 +61,11 @@
     "zod_user_name": "Oops! Looks like you forgot to tell me your name 😅",
     "zod_user_email": "Hmm... This email looks weird 🤔 Are you sure that's your email?",
     "zod_user_message": "Your message is empty... 📝"
+  },
+
+  "MessagePage": {
+    "title": "Contact Me",
+    "description": "Great! Send me a message using the form, and let's start building something ",
+    "strong_message": "amazing together!"
   }
 }

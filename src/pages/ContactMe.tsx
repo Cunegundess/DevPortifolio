@@ -29,17 +29,19 @@ function ContactMePage() {
         </div>
         <div className="flex justify-center items-center mt-16">
           {/* <ContactForm /> */}
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
-            }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-600 hover:from-cyan-500 hover:to-blue-600 text-white p-4 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
-          >
-            <TbMessageCircleShare size={25} className="text-white" />
-            <span>{t("ContactPage.text_button")}</span>
-          </motion.button>
+          <a href={`/${t("Navbar.Message")}`}>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-600 hover:from-cyan-500 hover:to-blue-600 text-white p-4 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
+            >
+              <TbMessageCircleShare size={25} className="text-white" />
+              <span>{t("ContactPage.text_button")}</span>
+            </motion.button>
+          </a>
         </div>
       </div>
     </section>

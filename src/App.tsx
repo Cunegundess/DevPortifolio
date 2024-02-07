@@ -1,28 +1,22 @@
+import { useTranslation } from "react-i18next";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
-import { Navbar } from "./layout/navbar/index.ts";
-import AboutMePage from "./pages/AboutMe";
-import ContactMePage from "./pages/ContactMe";
-import { IntroPage } from "./pages/Intro";
-import ProjectsPage from "./pages/Projects.tsx";
-import SkillsPage from "./pages/Skills";
-import Work from "./pages/Work";
+import MessageRoot from "./routes/MessageRoot.tsx";
+import Root from "./routes/Root.tsx";
 import "./utils/i18n.ts";
 
 // TODO: Add animations when scroll pages
 
 function App() {
+  const [t] = useTranslation("translation");
   return (
     <main className="dark:bg-slate-950">
-      <Navbar.Root>
-        <Navbar.Logo />
-        <Navbar.Content />
-      </Navbar.Root>
-      <IntroPage />
-      <AboutMePage />
-      <SkillsPage />
-      <ProjectsPage />
-      <Work />
-      <ContactMePage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Root />} />
+          <Route path={`/${t("Navbar.Message")}`} element={<MessageRoot />} />
+        </Routes>
+      </BrowserRouter>
       <Toaster />
     </main>
   );

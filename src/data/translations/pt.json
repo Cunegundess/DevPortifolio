@@ -1,11 +1,12 @@
 {
   "Navbar": {
-    "Home": "Home",
-    "AboutMe": "Sobre Mim",
-    "Skills": "Habilidades",
-    "Work": "Experiência",
-    "Projects": "Projetos",
-    "Contact": "Contato"
+    "Home": "home",
+    "AboutMe": "sobre mim",
+    "Skills": "habilidades",
+    "Work": "experiência",
+    "Projects": "projetos",
+    "Contact": "contato",
+    "Message": "message"
   },
 
   "IntroPage": {
@@ -49,7 +50,7 @@
   "ContactPage": {
     "title": "Entre em contato",
     "description": "Hey! Pronto para criar aplicativos web incríveis? Mande uma mensagem e vamos ",
-    "strong_message": "transformar suas ideias em realideade!",
+    "strong_message": "transformar suas ideias em realidade!",
     "name_input": "Insira seu nome",
     "email_input": "Insira seu email",
     "message_input": "Insira sua mensagem",
@@ -60,5 +61,11 @@
     "zod_user_name": "Oops! Parece que você esqueceu de me contar seu nome 😅",
     "zod_user_email": "Hmm... Que email estranho 🤔 Tem certeza que é seu email?",
     "zod_user_message": "Pelo jeito você esqueceu de escrever sua mensagem... 📝"
+  },
+
+  "MessagePage": {
+    "title": "Entre em contato",
+    "description": "Ótimo! Envie uma mensagem por esse formulário e vamos começar a desenvolver algo ",
+    "strong_message": "incrível juntos!"
   }
 }

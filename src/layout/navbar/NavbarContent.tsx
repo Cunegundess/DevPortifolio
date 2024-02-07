@@ -13,11 +13,11 @@ function NavbarContent() {
 
   const links = [
     { name: t("Navbar.Home"), link: "/" },
-    { name: t("Navbar.AboutMe"), link: "/" },
-    { name: t("Navbar.Skills"), link: "/" },
-    { name: t("Navbar.Projects"), link: "/" },
-    { name: t("Navbar.Work"), link: "/" },
-    { name: t("Navbar.Contact"), link: "/" },
+    { name: t("Navbar.AboutMe"), link: `/#${t("Navbar.AboutMe")}` },
+    { name: t("Navbar.Skills"), link: `/#${t("Navbar.Skills")}` },
+    { name: t("Navbar.Projects"), link: `/#${t("Navbar.Projects")}` },
+    { name: t("Navbar.Work"), link: `/#${t("Navbar.Work")}` },
+    { name: t("Navbar.Contact"), link: `/#${t("Navbar.Contact")}` },
   ];
 
   useEffect(() => {
@@ -47,7 +47,7 @@ function NavbarContent() {
               key={link.name}
               className="hover:text-zinc-500 dark:hover:text-zinc-400"
             >
-              <a href={`#${link.name}`}>{link.name} </a>
+              <a href={`/#${link.link}`}>{link.name} </a>
             </li>
           ))}
           <LanguageToggle />
@@ -59,7 +59,7 @@ function NavbarContent() {
               key={link.name}
               className="hover:text-zinc-500 dark:hover:text-zinc-400"
             >
-              <a href={`#${link.name}`}>{link.name}</a>
+              <a href={link.link}>{link.name}</a>
             </li>
           ))}
           <LanguageToggle />
