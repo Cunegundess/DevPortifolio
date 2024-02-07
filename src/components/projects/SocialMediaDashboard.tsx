@@ -7,8 +7,8 @@ import { Badge } from "../ui/badge";
 function SocialMediaDashboard() {
   const [t] = useTranslation("translation");
   return (
-    <div className="flex gap-10">
-      <div className="flex flex-col w-1/2 mx-5 justify-center">
+    <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:w-1/2 mx-5 justify-center">
         <h2 className="flex flex-row items-center text-3xl font-bold gap-1">
           <a
             href="https://socialdashboardmedia.netlify.app/"
@@ -44,10 +44,10 @@ function SocialMediaDashboard() {
         </div>
       </div>
 
-      <div className="w-1/2">
+      <div className="lg:w-1/2">
         <img
           className="w-full h-full rounded-lg shadow-xl"
-          src="images/socialmediadashboard.jpg"
+          src="images/socialmediadashboard.png"
         />
       </div>
     </div>

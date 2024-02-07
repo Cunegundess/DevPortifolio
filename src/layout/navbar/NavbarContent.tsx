@@ -15,8 +15,8 @@ function NavbarContent() {
     { name: t("Navbar.Home"), link: "/" },
     { name: t("Navbar.AboutMe"), link: "/" },
     { name: t("Navbar.Skills"), link: "/" },
-    { name: t("Navbar.Work"), link: "/" },
     { name: t("Navbar.Projects"), link: "/" },
+    { name: t("Navbar.Work"), link: "/" },
     { name: t("Navbar.Contact"), link: "/" },
   ];
 

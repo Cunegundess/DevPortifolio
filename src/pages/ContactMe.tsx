@@ -1,32 +1,48 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import ContactForm from "../components/ContactForm";
+import { TbMessageCircleShare } from "react-icons/tb";
 import IconsContact from "../components/IconsContact";
 
 function ContactMePage() {
   const [t] = useTranslation("translation");
   return (
-    <div
+    <section
       id={t("Navbar.Contact")}
-      className="min-h-screen flex flex-col lg:flex-row"
+      className="min-h-screen flex flex-col lg:mx-36"
     >
-      <div className="lg:w-1/2 flex-col lg:ml-8 mt-28 lg:mt-[200px] justify-end lg:items-center lg:pr-4 px-5">
-        <div className="text-center lg:flex-auto">
-          <h1 className="text-zinc-950 dark:text-zinc-50 text-5xl lg:text-7xl font-bold pb-5 lg:pb-5">
+      <div className="justify-center items-center p-10 mx-10 mt-28">
+        <div className="flex flex-col gap-2 leading-[30px]">
+          <h1 className="text-xl font-medium">
+            <span className="drop-shadow-lg text-xl lg:text-2xl">🧑🏻‍💻</span>{" "}
             {t("ContactPage.title")}
           </h1>
-          <span className="text-zinc-950 dark:text-zinc-50 text-1xl lg:text-2xl font-medium leading-[20px] ">
-            {t("ContactPage.description")} 🚀
-          </span>
+          <div className="mt-16 font-bold text-center text-3xl lg:text-4xl">
+            {t("ContactPage.description")}
+            <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text capitalize">
+              {t("ContactPage.strong_message")}{" "}
+            </span>
+            <span className="drop-shadow-lg text-2xl lg:text-3xl">🚀</span>
+          </div>
         </div>
-        <div className="w-full lg:w-auto pt-10 px-5 lg:px-20 flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-10">
           <IconsContact />
         </div>
+        <div className="flex justify-center items-center mt-16">
+          {/* <ContactForm /> */}
+          <motion.button
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-600 hover:from-cyan-500 hover:to-blue-600 text-white p-4 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
+          >
+            <TbMessageCircleShare size={25} className="text-white" />
+            <span>{t("ContactPage.text_button")}</span>
+          </motion.button>
+        </div>
       </div>
-
-      <div className="lg:mr-8 mt-8 lg:mt-[200px] flex-auto lg:w-1/2 justify-start items-end p-5">
-        <ContactForm />
-      </div>
-    </div>
+    </section>
   );
 }
 

@@ -3,7 +3,7 @@
     "Home": "Home",
     "AboutMe": "About Me",
     "Skills": "Skills",
-    "Work": "Work",
+    "Work": "Experience",
     "Projects": "Projects",
     "Contact": "Contact"
   },
@@ -31,7 +31,7 @@
     "job": "Full-Stack Software Developer at ",
     "company": "Youtan",
     "status": "Internship | Sep 2023 - Present",
-    "job_description": "Developing interactive and responsive user interfaces with TypeScript and React, focusing on reusable components and backend data integration. Building and maintaining web applications using the Django framework for robust systems and business logic, along with Django Rest Framework for API creation. Efficiently querying Microsoft SQL Server and PostgreSQL databases for data manipulation.",
+    "job_description": "Developing interactive and responsive user interfaces with TypeScript and React, focusing on reusable components and backend data integration. Building and maintaining web applications using the Django framework for robust systems and business logic, along with Django Rest Framework for API creation. Efficiently querying Microsoft SQL Server databases for data manipulation.",
     "text_button": "Download CV"
   },
 
@@ -48,10 +48,13 @@
 
   "ContactPage": {
     "title": "Contact Me",
-    "description": "Hey there! Let's chat code, design, and all things web! From crafting sleek interfaces to solving tech puzzles, I'm here to bring your digital dreams to life. Drop me a line, and let's cook up some cool stuff together!",
+    "description": "Hey! Ready to create some awesome web applications? Drop me a line, and let's ",
+    "strong_message": "turn your ideas into reality!",
     "name_input": "Enter your name",
     "email_input": "Enter your email",
     "message_input": "Type your message",
+    "submit": "Submit",
+    "text_button": "Send a message",
     "toast_title": "Your message was sent!!",
     "toast_description": "Thank you, I'll respond right away",
     "zod_user_name": "Oops! Looks like you forgot to tell me your name 😅",
