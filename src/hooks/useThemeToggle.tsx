@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 
 function useThemeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    localStorage.setItem("theme", "light");
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme
-      ? savedTheme === "dark"
-      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (savedTheme !== null) {
+      return savedTheme === "dark";
+    } else {
+      localStorage.setItem("theme", "light");
+      return false;
+    }
   });
 
   useEffect(() => {

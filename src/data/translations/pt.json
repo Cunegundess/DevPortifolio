@@ -66,6 +66,7 @@
   "MessagePage": {
     "title": "Entre em contato",
     "description": "Ótimo! Envie uma mensagem por esse formulário e vamos começar a desenvolver algo ",
-    "strong_message": "incrível juntos!"
+    "strong_message": "incrível juntos!",
+    "go_back": "Voltar"
   }
 }

@@ -66,6 +66,7 @@
   "MessagePage": {
     "title": "Contact Me",
     "description": "Great! Send me a message using the form, and let's start building something ",
-    "strong_message": "amazing together!"
+    "strong_message": "amazing together!",
+    "go_back": "Go back"
   }
 }
