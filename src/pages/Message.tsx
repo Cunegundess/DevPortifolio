@@ -6,7 +6,7 @@ function MessagePage() {
   const [t] = useTranslation("translation");
 
   return (
-    <section id={t("Navbar.Message")} className="min-h-screen flex ">
+    <section id={t("Navbar.Message")} className="h-screen flex ">
       <div className="flex flex-col lg:flex-row justify-center items-center p-10 mt-15">
         <div className="flex flex-col gap-2 leading-[30px] lg:w-2/5 lg:ml-36">
           <div className="mt-16 font-bold text-center text-3xl lg:text-4xl">

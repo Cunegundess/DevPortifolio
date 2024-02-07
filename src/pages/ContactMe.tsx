@@ -8,7 +8,7 @@ function ContactMePage() {
   return (
     <section
       id={t("Navbar.Contact")}
-      className="min-h-screen flex flex-col lg:mx-36"
+      className="h-screen flex flex-col lg:mx-36"
     >
       <div className="justify-center items-center p-10 mx-10 mt-28">
         <div className="flex flex-col gap-2 leading-[30px]">

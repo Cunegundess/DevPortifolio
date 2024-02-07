@@ -12,7 +12,7 @@ function NavbarContent() {
   const [t] = useTranslation("translation");
 
   const links = [
-    { name: t("Navbar.Home"), link: "/" },
+    // { name: t("Navbar.Home"), link: "/" },
     { name: t("Navbar.AboutMe"), link: `/#${t("Navbar.AboutMe")}` },
     { name: t("Navbar.Skills"), link: `/#${t("Navbar.Skills")}` },
     { name: t("Navbar.Projects"), link: `/#${t("Navbar.Projects")}` },
@@ -47,7 +47,7 @@ function NavbarContent() {
               key={link.name}
               className="hover:text-slate-500 dark:hover:text-slate-400"
             >
-              <a href={`/#${link.link}`}>{link.name} </a>
+              <a href={link.link}>{link.name} </a>
             </li>
           ))}
           <LanguageToggle />

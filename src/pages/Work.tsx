@@ -8,7 +8,7 @@ function WorkPage() {
   return (
     <section
       id={t("Navbar.Work")}
-      className="min-h-screen flex flex-col lg:flex-row"
+      className="h-screen flex flex-col lg:flex-row"
     >
       <div className="justify-center items-center p-10 mx-5 mt-28">
         <div className="flex flex-col gap-2 leading-[30px] lg:mx-36">
