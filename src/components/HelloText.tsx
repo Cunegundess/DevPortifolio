@@ -29,7 +29,7 @@ function HelloText() {
       </div>
       <IconsContact />
       <RxDoubleArrowDown
-        className="text-zinc-950 dark:text-zinc-50 text-3xl animate-bounce"
+        className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce"
         size={30}
       />
     </div>

@@ -17,7 +17,7 @@ function App() {
           <Route path={`/${t("Navbar.Message")}`} element={<MessageRoot />} />
         </Routes>
       </BrowserRouter>
-      <Toaster />
+      <Toaster richColors={false} />
     </main>
   );
 }

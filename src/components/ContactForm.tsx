@@ -31,7 +31,7 @@ export default function ContactForm() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const ContactForm = useRef<HTMLFormElement | null>(null);
 
-  function HandleFormFields(data: contactFormFieldsType) {
+  function HandleFormFields() {
     if (ContactForm.current) {
       emailjs.sendForm(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -44,12 +44,14 @@ export default function ContactForm() {
     toast(`🥳 ${t("ContactPage.toast_title")} `, {
       description: t("ContactPage.toast_description"),
       duration: 2000,
-      action: {
+      position: "top-right",
+      cancel: {
         label: "X",
-        onClick: () => console.log("Undo"),
+      },
+      cancelButtonStyle: {
+        fontWeight: "bolder",
       },
     });
-    console.log(data);
   }
 
   return (

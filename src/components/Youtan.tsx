@@ -15,7 +15,7 @@ function Youtan() {
   return (
     <Card className="rounded-lg shadow-lg md:mx-10 lg:mx-0">
       <CardHeader>
-        <CardTitle className="text-zinc-950 dark:text-zinc-50 text-2xl font-bold leading-[30px] ">
+        <CardTitle className="text-slate-950 dark:text-slate-50 text-2xl font-bold leading-[30px] ">
           {t("WorkPage.job")}
 
           <a
@@ -27,11 +27,11 @@ function Youtan() {
             <HiLink size={20} />
           </a>
         </CardTitle>
-        <CardDescription className="text-zinc-950 dark:text-zinc-50 text-xl font-medium leading-[30px]">
+        <CardDescription className="text-slate-950 dark:text-slate-50 text-xl font-medium leading-[30px]">
           {t("WorkPage.status")}
         </CardDescription>
       </CardHeader>
-      <CardContent className="text-zinc-950 dark:text-zinc-50 text-center pb-0">
+      <CardContent className="text-slate-950 dark:text-slate-50 text-center pb-0">
         <Separator />
         <p className="lg:text-left text-base font-medium leading-[25px] py-3">
           {t("WorkPage.job_description")}

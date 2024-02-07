@@ -41,11 +41,11 @@ function NavbarContent() {
   return (
     <div className="flex flex-row gap-8 font-medium items-center relative tracking-wide">
       {isMenuOpen ? (
-        <ul className="lg:hidden flex flex-col absolute top-10 right-0 bg-zinc-50 dark:bg-slate-900 p-5 w-[150px] shadow-lg rounded-md text-center gap-3">
+        <ul className="lg:hidden flex flex-col absolute top-10 right-0 bg-slate-50 dark:bg-slate-900 p-5 w-[150px] shadow-lg rounded-md text-center gap-3">
           {links.map((link) => (
             <li
               key={link.name}
-              className="hover:text-zinc-500 dark:hover:text-zinc-400"
+              className="hover:text-slate-500 dark:hover:text-slate-400"
             >
               <a href={`/#${link.link}`}>{link.name} </a>
             </li>
@@ -57,7 +57,7 @@ function NavbarContent() {
           {links.map((link) => (
             <li
               key={link.name}
-              className="hover:text-zinc-500 dark:hover:text-zinc-400"
+              className="hover:text-slate-500 dark:hover:text-slate-400"
             >
               <a href={link.link}>{link.name}</a>
             </li>
@@ -68,7 +68,7 @@ function NavbarContent() {
       <ThemeToggle />
       <motion.button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="lg:hidden text-zinc-950 dark:text-zinc-50"
+        className="lg:hidden text-slate-950 dark:text-slate-50"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >

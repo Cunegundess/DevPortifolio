@@ -33,18 +33,18 @@
     "company": "Youtan",
     "status": "Internship | Sep 2023 - Present",
     "job_description": "Developing interactive and responsive user interfaces with TypeScript and React, focusing on reusable components and backend data integration. Building and maintaining web applications using the Django framework for robust systems and business logic, along with Django Rest Framework for API creation. Efficiently querying Microsoft SQL Server databases for data manipulation.",
-    "text_button": "Download CV"
+    "text_button": "Download Resume"
   },
 
-  "CV": "cv/LucasCunegundes-curriculo-en.pdf",
+  "CV": "cv/LucasCunegundes-resume.pdf",
 
   "ProjectsPage": {
     "title": "Projects",
-    "social_media_dashboard_description": "This is a dashboard app that displays social media statistics for a fictitious company. The dashboard displays some information about followers and statistics about the users' activity on social media, including engagement rates and post reach.",
-    "bibliotech_description": "The Bibliotech is a comprehensive library management system designed to simplify and enhance library administration. This project aims to provide a comprehensive solution for managing collections, loans, and library users",
-    "company_hub_description": "This project is a dynamic and collaborative platform dedicated to optimizing workflow and communication within your company. It offers a comprehensive suite of tools and features to facilitate efficient project management",
+    "social_media_dashboard_description": "This is a dashboard app that displays social media statistics. It provides information about followers and statistics about the users' activity on social media, including engagement rates and post reach.",
+    "bibliotech_description": "The Bibliotech is a comprehensive library management system designed to simplify and enhance library administration. This project aims to provide a comprehensive solution for managing books, loans, and library users",
+    "company_hub_description": "This project is a dynamic platform dedicated to optimizing the flow of business management and organization. It provides a comprehensive set of tools and resources to facilitate efficient management of documentation and clients.",
     "under_construction_title": "🚧 Under construction... 🚧",
-    "under_construction_description": "Take a coffee break and hang tight, I'm working on the project"
+    "under_construction_description": "Take a coffee break and hang tight, I'm working on a new project"
   },
 
   "ContactPage": {

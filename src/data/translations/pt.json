@@ -36,15 +36,15 @@
     "text_button": "Baixar Currículo"
   },
 
-  "CV": "cv/LucasCunegundes-curriculo-br.pdf",
+  "CV": "cv/LucasCunegundes-curriculo.pdf",
 
   "ProjectsPage": {
     "title": "Projetos",
-    "social_media_dashboard_description": "Este é um aplicativo de painel que exibe estatísticas de mídia social para uma empresa fictícia. O painel exibe algumas informações sobre seguidores e estatísticas sobre a atividade dos usuários nas mídias sociais, incluindo taxas de engajamento e alcance de postagens.",
-    "bibliotech_description": "O Bibliotech é um sistema abrangente de gerenciamento de bibliotecas projetado para simplificar e aprimorar a administração de bibliotecas. Este projeto tem como objetivo fornecer uma solução abrangente para o gerenciamento de coleções, empréstimos e usuários da biblioteca",
-    "company_hub_description": "Este projeto é uma plataforma dinâmica e colaborativa dedicada à otimização de fluxo de trabalho e comunicação dentro da sua empresa. Ele oferece um conjunto abrangente de ferramentas e recursos para facilitar o gerenciamento eficiente de projetos.",
+    "social_media_dashboard_description": "Este é um aplicativo que exibe estatísticas de mídias sociais. Ele fornece informações sobre seguidores e estatísticas sobre a atividade dos usuários nas redess sociais, incluindo taxas de engajamento e alcance de postagens.",
+    "bibliotech_description": "O Bibliotech é um sistema abrangente de gerenciamento de bibliotecas projetado para simplificar e aprimorar a administração de bibliotecas. Este projeto tem como objetivo fornecer uma solução abrangente para o gerenciamento de livros, empréstimos e usuários",
+    "company_hub_description": "Este projeto é uma plataforma dinâmica projetada para otimizar o fluxo de gerenciamento e organização empresarial. Oferecemos um conjunto completo de ferramentas e recursos para simplificar o gerenciamento eficaz de documentos e clientes, ajudando as empresas a alcançarem maior eficiência e produtividade.",
     "under_construction_title": "🚧 Em construção... 🚧",
-    "under_construction_description": "Pegue um café e se aconchegue, estou trabalhando no projeto"
+    "under_construction_description": "Pegue um café e se aconchegue, estou trabalhando em um novo projeto"
   },
 
   "ContactPage": {
