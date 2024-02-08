@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FaGithubAlt } from "react-icons/fa";
-import { HiLink } from "react-icons/hi";
+import { PiGlobeBold } from "react-icons/pi";
 import { Badge } from "../ui/badge";
 
 function CompanyHub() {
@@ -9,23 +9,23 @@ function CompanyHub() {
   return (
     <div className="flex flex-col lg:flex-row gap-10">
       <div className="flex flex-col lg:w-1/2 mx-5 justify-center">
-        <h2 className="flex flex-row items-center text-3xl font-bold gap-1">
-          <a
-            href="https://github.com/Cunegundess/CompanyHub"
-            target="_blank"
-            className="hover:text-blue-500 hover:underline hover:decoration-3 inline-flex items-center gap-1"
-          >
-            CompanyHub <HiLink size={20} />
-          </a>{" "}
-          <motion.a
-            href="https://www.github.com/Cunegundess/CompanyHub"
-            target="_blank"
-            className="flex gap-1 drop-shadow-lg p-1 h-fit w-fit "
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FaGithubAlt className="text-black dark:text-white " size={25} />
-          </motion.a>
+        <h2 className="flex flex-col text-3xl font-bold gap-1">
+          CompanyHub
+          <span className="flex flex-row items-center gap-1">
+            <PiGlobeBold
+              className="text-gray-400 dark:text-gray-500"
+              size={30}
+            />
+            <motion.a
+              href="https://www.github.com/Cunegundess/Companyhub"
+              target="_blank"
+              className="flex gap-1 drop-shadow-lg p-1 h-fit w-fit hover:text-blue-700"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaGithubAlt size={30} />
+            </motion.a>
+          </span>
         </h2>
 
         <p className="lg:text-left text-medium leading-[25px] py-4">
