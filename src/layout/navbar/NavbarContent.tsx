@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoClose } from "react-icons/io5";
-import { LuMoreVertical } from "react-icons/lu";
+import { TbMenu2 } from "react-icons/tb";
 import ThemeToggle from "../../components/ThemeToggle";
 
 function NavbarContent() {
@@ -72,7 +72,7 @@ function NavbarContent() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        {!isMenuOpen ? <LuMoreVertical size={28} /> : <IoClose size={28} />}
+        {!isMenuOpen ? <TbMenu2 size={28} /> : <IoClose size={28} />}
       </motion.button>
     </div>
   );
