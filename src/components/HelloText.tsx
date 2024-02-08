@@ -18,7 +18,7 @@ function HelloText() {
       <div className="flex flex-col gap-3 text-center w-fit h-fit">
         <h1 className="font-extrabold text-5xl tracking-tight">
           {t("IntroPage.greeting")}{" "}
-          <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent text-5xl bg-clip-text">
             Lucas Cunegundes
           </span>
         </h1>
@@ -27,11 +27,15 @@ function HelloText() {
           {t("IntroPage.presentation")}
         </span>
       </div>
-      <IconsContact />
-      <RxDoubleArrowDown
-        className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce"
-        size={30}
-      />
+      <div className="flex flex-col justify-center items-center">
+        <IconsContact />
+        <div className="mt-9">
+          <RxDoubleArrowDown
+            className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce mt-20"
+            size={30}
+          />
+        </div>
+      </div>
     </div>
   );
 }
