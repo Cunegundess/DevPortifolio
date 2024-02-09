@@ -40,9 +40,9 @@
 
   "ProjectsPage": {
     "title": "Projetos",
-    "social_media_dashboard_description": "Este é um aplicativo que exibe estatísticas de mídias sociais. Ele fornece informações sobre seguidores e estatísticas sobre a atividade dos usuários nas redess sociais, incluindo taxas de engajamento e alcance de postagens.",
-    "bibliotech_description": "O Bibliotech é um sistema abrangente de gerenciamento de bibliotecas projetado para simplificar e aprimorar a administração de bibliotecas. Este projeto tem como objetivo fornecer uma solução abrangente para o gerenciamento de livros, empréstimos e usuários",
-    "company_hub_description": "Este projeto é uma plataforma dinâmica projetada para otimizar o fluxo de gerenciamento e organização empresarial. Oferecemos um conjunto completo de ferramentas e recursos para simplificar o gerenciamento eficaz de documentos e clientes, ajudando as empresas a alcançarem maior eficiência e produtividade.",
+    "social_media_dashboard_description": "Projetado para oferecer insights sobre a presença em mídias sociais, este aplicativo de painel fornece estatísticas detalhadas sobre o engajamento do usuário e o desempenho das postagens. Ao agregar dados de várias plataformas de mídia social, ele oferece informações valiosas sobre a atividade do usuário, incluindo taxas de engajamento e alcance de postagens.",
+    "bibliotech_description": "O Bibliotech é um sistema abrangente de gerenciamento de bibliotecas projetado para simplificar e aprimorar a administração de bibliotecas. Este projeto tem como objetivo fornecer uma solução abrangente para o gerenciamento de livros, empréstimos e usuários, simplificando o processo de catalogação, rastreamento de empréstimos e gerenciamento de usuários dentro das bibliotecas.",
+    "company_hub_description": "O Company Hub é uma plataforma dinâmica dedicada à otimização do fluxo de gerenciamento e organização empresarial. Ele fornece um conjunto abrangente de ferramentas e recursos para facilitar o gerenciamento eficiente de documentos e clientes. Ao centralizar os processos de negócios e as interações com clientes, ele aumenta a produtividade e simplifica as operações para empresas de todos os tamanhos.",
     "under_construction_title": "🚧 Em construção... 🚧",
     "under_construction_description": "Pegue um café e se aconchegue, estou trabalhando em um novo projeto"
   },
@@ -55,7 +55,7 @@
     "email_input": "Insira seu email",
     "message_input": "Insira sua mensagem",
     "submit": "Enviar",
-    "text_button": "Mandar uma mensagem",
+    "text_button": "Mandar mensagem",
     "toast_title": "Sua mensagem foi enviada!!",
     "toast_description": "Muito obrigado, irei responder já já",
     "zod_user_name": "Oops! Parece que você esqueceu de me contar seu nome 😅",

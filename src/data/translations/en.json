@@ -18,7 +18,7 @@
     "title": "About Me",
     "greetings": "Hi! I'm a",
     "job": "Full Stack Developer",
-    "about": "especializing in frontend development. I enjoy coming up with some ideas and transforming them into cool web applications.",
+    "about": "specializing in frontend development. I enjoy coming up with some ideas and transforming them into cool web applications.",
     "objective": "I am looking for exciting challenges where I can add value and promote positive changes. I am determined to overcome obstacles and deepen my skills in the field."
   },
 
@@ -40,9 +40,9 @@
 
   "ProjectsPage": {
     "title": "Projects",
-    "social_media_dashboard_description": "This is a dashboard app that displays social media statistics. It provides information about followers and statistics about the users' activity on social media, including engagement rates and post reach.",
-    "bibliotech_description": "The Bibliotech is a comprehensive library management system designed to simplify and enhance library administration. This project aims to provide a comprehensive solution for managing books, loans, and library users",
-    "company_hub_description": "This project is a dynamic platform dedicated to optimizing the flow of business management and organization. It provides a comprehensive set of tools and resources to facilitate efficient management of documentation and clients.",
+    "social_media_dashboard_description": "Designed to offer insights into social media presence, this dashboard app provides detailed statistics on user engagement and post performance. By aggregating data from various social media platforms, it offers valuable information about user activity, including engagement rates and post reach.",
+    "bibliotech_description": "The Bibliotech is a comprehensive library management system designed to simplify and enhance library administration. This project aims to provide a comprehensive solution for managing books, loans, and library users, streamlining the process of cataloging, loan tracking, and user management within libraries.",
+    "company_hub_description": "The Company Hub is a dynamic platform dedicated to optimizing the flow of business management and organization. It provides a comprehensive set of tools and resources to facilitate efficient management of documentation and clients. By centralizing business processes and client interactions, it enhances productivity and streamlines operations for businesses of all sizes.",
     "under_construction_title": "🚧 Under construction... 🚧",
     "under_construction_description": "Take a coffee break and hang tight, I'm working on a new project"
   },
@@ -55,7 +55,7 @@
     "email_input": "Enter your email",
     "message_input": "Type your message",
     "submit": "Submit",
-    "text_button": "Send a message",
+    "text_button": "Send message",
     "toast_title": "Your message was sent!!",
     "toast_description": "Thank you, I'll respond right away",
     "zod_user_name": "Oops! Looks like you forgot to tell me your name 😅",

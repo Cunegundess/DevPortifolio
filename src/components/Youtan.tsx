@@ -21,7 +21,7 @@ function Youtan() {
           <a
             href="https://youtan.com.br/"
             target="_blank"
-            className="hover:text-blue-500 hover:underline hover:decoration-3 inline-flex items-center gap-1"
+            className="hover:text-blue-500 inline-flex items-center gap-1"
           >
             {t("WorkPage.company")}
             <HiLink size={20} />

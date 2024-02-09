@@ -7,31 +7,33 @@ import { Badge } from "../ui/badge";
 function CompanyHub() {
   const [t] = useTranslation("translation");
   return (
-    <div className="flex flex-col lg:flex-row gap-10">
-      <div className="flex flex-col lg:w-1/2 mx-5 justify-center">
-        <h2 className="flex flex-col text-3xl font-bold gap-1">
+    <div className="flex flex-col">
+      <div className="flex flex-col  mx-5 justify-center">
+        <h2 className="flex flex-col text-3xl font-extrabold gap-1 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-blue-600 to-blue-700">
           CompanyHub
-          <span className="flex flex-row items-center gap-1">
-            <PiGlobeBold
-              className="text-gray-400 dark:text-gray-500"
-              size={30}
-            />
-            <motion.a
-              href="https://www.github.com/Cunegundess/Companyhub"
-              target="_blank"
-              className="flex gap-1 drop-shadow-lg p-1 h-fit w-fit hover:text-blue-700"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaGithubAlt size={30} />
-            </motion.a>
-          </span>
         </h2>
-
-        <p className="lg:text-left text-medium leading-[25px] py-4">
+        <span className="flex flex-row items-center gap-1">
+          <PiGlobeBold className="text-gray-400 dark:text-gray-500" size={30} />
+          <motion.a
+            href="https://www.github.com/Cunegundess/Companyhub"
+            target="_blank"
+            className="flex gap-1 drop-shadow-lg p-1 h-fit w-fit hover:text-cyan-500"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaGithubAlt size={30} />
+          </motion.a>
+        </span>
+        <p className="text-left font-light leading-[25px] py-5">
           {t("ProjectsPage.company_hub_description")}
         </p>
-        <div className="flex gap-5 items-center justify-center pt-2">
+        <div className="flex justify-center items-center">
+          <img
+            className="h-full w-full md:h-3/4 md:w-3/4 lg:h-3/4 lg:w-3/4 bg-transparent"
+            src="images/companyhub.png"
+          />
+        </div>
+        <div className="flex gap-5 items-center justify-center pt-5">
           <Badge className="text-black bg-cyan-300 hover:bg-cyan-400 dark:hover:bg-cyan-500 transition shadow-lg text-center">
             ReactJS
           </Badge>
@@ -42,12 +44,6 @@ function CompanyHub() {
             TailwindCSS
           </Badge>
         </div>
-      </div>
-      <div className="lg:w-1/2">
-        <img
-          className="w-full h-full rounded-lg shadow-xl"
-          src="images/companyhub.png"
-        />
       </div>
     </div>
   );

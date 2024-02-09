@@ -1,11 +1,11 @@
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 import { z } from "zod";
-import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -97,12 +97,17 @@ export default function ContactForm() {
               {errors.message.message}
             </p>
           )}
-          <Button
-            className="bg-blue-500 text-white w-full p-4 rounded font-bold hover:bg-blue-600 transition"
+          <motion.button
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
+            }}
+            whileTap={{ scale: 0.7 }}
+            className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-2 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
             type="submit"
           >
-            {t("ContactPage.submit")}
-          </Button>
+            <span>{t("ContactPage.text_button")}</span>{" "}
+          </motion.button>
         </form>
       </CardContent>
     </Card>

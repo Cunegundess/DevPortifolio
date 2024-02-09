@@ -26,7 +26,7 @@ function NavbarRoot({ children }: NavbarRootProps) {
       }}
       transition={{ duration: 0.35, ease: "easeInOut" }}
       animate={hidden ? "hidden" : "visible"}
-      className="flex fixed z-50 w-full h-16 justify-between items-center px-5 lg:px-10 bg-slate-50 dark:bg-slate-950"
+      className="flex fixed z-50 w-full h-16 justify-between items-center px-5 lg:px-10 bg-white dark:bg-slate-950"
     >
       {children}
     </motion.nav>

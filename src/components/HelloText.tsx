@@ -34,10 +34,12 @@ function HelloText() {
       <div className="flex flex-col justify-center items-center">
         <IconsContact />
         <div className="mt-9">
-          <RxDoubleArrowDown
-            className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce mt-20 md:my-20 lg:my-20"
-            size={30}
-          />
+          <a href={`/#${t("Navbar.AboutMe")}`}>
+            <RxDoubleArrowDown
+              className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce mt-20 md:my-20 lg:my-20"
+              size={30}
+            />
+          </a>
         </div>
       </div>
     </div>
