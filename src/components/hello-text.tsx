@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { RxDoubleArrowDown } from "react-icons/rx";
-import IconsContact from "./IconsContact";
+import IconsContact from "./icons-contact";
 
 function HelloText() {
   const [t] = useTranslation("translation");
@@ -22,7 +22,7 @@ function HelloText() {
             {t("IntroPage.greeting")}
           </h1>
 
-          <p className="font-extrabold pb-2 text-5xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-700 ">
+          <p className="font-extrabold pb-2 text-5xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-700">
             Lucas Cunegundes
           </p>
         </div>

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import StackIcons from "../components/StackIcons";
+import StackIcons from "../components/stack-icons";
 
 function SkillsPage() {
   const [t] = useTranslation("translation");

@@ -1,5 +1,5 @@
-import Youtan from "@/components/Youtan";
 import DownloadCV from "@/components/download-cv";
+import Youtan from "@/components/youtan";
 import { useTranslation } from "react-i18next";
 
 function WorkPage() {

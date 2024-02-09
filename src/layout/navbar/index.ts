@@ -1,6 +1,6 @@
-import NavbarContent from "./NavbarContent";
-import NavbarLogo from "./NavbarLogo";
-import NavbarRoot from "./NavbarRoot";
+import NavbarContent from "./navbar-content";
+import NavbarLogo from "./navbar-logo";
+import NavbarRoot from "./navbar-root";
 
 export const Navbar = {
   Root: NavbarRoot,

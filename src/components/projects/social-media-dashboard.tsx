@@ -38,7 +38,7 @@ function SocialMediaDashboard() {
         <div className="flex justify-center items-center ">
           <img
             className="w-full h-full md:w-3/4 md:h-3/4 lg:w-3/4 lg:h-3/4 bg-transparent"
-            src="images/socialmediadashboard-mockup.png"
+            src="images/socialmediadashboard.png"
           />
         </div>
         <div className="flex gap-5 items-center justify-center pt-5">

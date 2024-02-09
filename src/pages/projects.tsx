@@ -1,23 +1,12 @@
-import Bibliotech from "@/components/projects/Bibliotech";
-import CompanyHub from "@/components/projects/CompanyHub";
-import SocialMediaDashboard from "@/components/projects/SocialMediaDashboard";
-import UnderConstruction from "@/components/projects/UnderConstruction";
+import Bibliotech from "@/components/projects/bibliotech";
+import CompanyHub from "@/components/projects/company-hub";
+import SocialMediaDashboard from "@/components/projects/social-media-dashboard";
+import UnderConstruction from "@/components/projects/under-construction";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 function ProjectsPage() {
   const [t] = useTranslation("translation");
-  // const [scope, animate] = useAnimate();
-  // const isInView = useInView(scope);
-
-  // useEffect(() => {
-  //   if (isInView) {
-  //     const enterAnimation = async () => {
-  //       await animate("div", { opacity: 0.5 }, { duration: 0.5 });
-  //     };
-  //     enterAnimation();
-  //   }
-  // });
 
   return (
     <section id={t("Navbar.Projects")} className="h-screen flex flex-col">

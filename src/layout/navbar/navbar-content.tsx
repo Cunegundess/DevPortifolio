@@ -1,10 +1,10 @@
-import LanguageToggle from "@/components/LanguageToggle";
+import LanguageToggle from "@/components/language-toggle";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoClose } from "react-icons/io5";
 import { TbMenu2 } from "react-icons/tb";
-import ThemeToggle from "../../components/ThemeToggle";
+import ThemeToggle from "../../components/theme-toggle";
 
 function NavbarContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +12,6 @@ function NavbarContent() {
   const [t] = useTranslation("translation");
 
   const links = [
-    // { name: t("Navbar.Home"), link: "/" },
     { name: t("Navbar.AboutMe"), link: `/#${t("Navbar.AboutMe")}` },
     { name: t("Navbar.Skills"), link: `/#${t("Navbar.Skills")}` },
     { name: t("Navbar.Projects"), link: `/#${t("Navbar.Projects")}` },

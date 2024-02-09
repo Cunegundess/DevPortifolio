@@ -1,10 +1,10 @@
 import { Navbar } from "@/layout/navbar";
-import AboutMePage from "@/pages/AboutMe";
-import ContactMePage from "@/pages/ContactMe";
-import { IntroPage } from "@/pages/Intro";
-import ProjectsPage from "@/pages/Projects";
-import SkillsPage from "@/pages/Skills";
-import Work from "@/pages/Work";
+import AboutMePage from "@/pages/about-me";
+import ContactMePage from "@/pages/contact-me";
+import { IntroPage } from "@/pages/intro";
+import ProjectsPage from "@/pages/projects";
+import SkillsPage from "@/pages/skills";
+import Work from "@/pages/work";
 
 function Root() {
   return (

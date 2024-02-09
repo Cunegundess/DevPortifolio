@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useThemeToggle() {
+function useTheme() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme !== null) {
@@ -23,4 +23,4 @@ function useThemeToggle() {
   return { isDarkMode, toggleTheme };
 }
 
-export default useThemeToggle;
+export default useTheme;

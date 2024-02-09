@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { RiMoonClearLine } from "react-icons/ri";
 import { TbSunset2 } from "react-icons/tb";
-import useThemeToggle from "../hooks/useThemeToggle";
+import useTheme from "../hooks/useTheme";
 
 function ThemeToggle() {
-  const { isDarkMode, toggleTheme } = useThemeToggle();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <motion.button

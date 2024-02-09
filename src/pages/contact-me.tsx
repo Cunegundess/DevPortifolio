@@ -8,7 +8,7 @@ import {
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TbMessageCircleShare } from "react-icons/tb";
-import IconsContact from "../components/IconsContact";
+import IconsContact from "../components/icons-contact";
 
 function ContactMePage() {
   const [t] = useTranslation("translation");
@@ -57,7 +57,6 @@ function ContactMePage() {
           <IconsContact />
         </div>
         <div className="flex justify-center items-center mt-16">
-          {/* <ContactForm /> */}
           <a href={`/${t("Navbar.Message")}`}>
             <motion.button
               whileHover={{

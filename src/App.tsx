@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
-import MessageRoot from "./routes/MessageRoot.tsx";
-import Root from "./routes/Root.tsx";
+import MessageRoot from "./routes/message-root.tsx";
+import Root from "./routes/root.tsx";
 import "./utils/i18n.ts";
-
-// TODO: Add animations when scroll pages
 
 function App() {
   const [t] = useTranslation("translation");

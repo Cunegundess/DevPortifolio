@@ -1,5 +1,5 @@
 import { Navbar } from "@/layout/navbar";
-import MessagePage from "@/pages/Message";
+import MessagePage from "@/pages/message";
 
 function MessageRoot() {
   return (

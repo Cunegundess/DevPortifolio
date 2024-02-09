@@ -1,45 +1,18 @@
-import ContactForm from "@/components/ContactForm";
-import IconsContact from "@/components/IconsContact";
-import { Reveal } from "@/components/motion/Reveal";
-import {
-  motion,
-  useAnimate,
-  useInView,
-  useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
-import { useState } from "react";
+import ContactForm from "@/components/contact-form";
+import IconsContact from "@/components/icons-contact";
+import { Reveal } from "@/components/motion/reveal-animation";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowBack } from "react-icons/io";
 
 function MessagePage() {
   const [t] = useTranslation("translation");
-  const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(true);
-  const [scope] = useAnimate();
-  const isInView = useInView(scope);
-
-  useMotionValueEvent(scrollY, "change", () => {
-    if (isInView) {
-      setHidden(false);
-    } else {
-      setHidden(true);
-    }
-  });
 
   return (
     <Reveal>
-      <section ref={scope} id={t("Navbar.Message")} className="h-screen flex ">
+      <section id={t("Navbar.Message")} className="h-screen flex ">
         <div className="flex flex-col lg:flex-row justify-center items-center p-10 mt-20">
           <div className="flex flex-col gap-2 leading-[30px] lg:w-2/5 lg:ml-36">
-            <motion.div
-            // variants={{
-            //   hidden: { opacity: 0, x: -75 },
-            //   visible: { opacity: 1, x: 0 },
-            // }}
-            // transition={{ duration: 0.5, ease: "easeInOut" }}
-            // animate={hidden ? "hidden" : "visible"}
-            >
+            <div>
               <h1 className="flex text-left text-xl font-bold">
                 <a
                   href="/"
@@ -58,7 +31,7 @@ function MessagePage() {
               <div className="flex flex-col justify-center items-center mt-10">
                 <IconsContact />
               </div>
-            </motion.div>
+            </div>
           </div>
 
           <div className="flex justify-center items-center mt-16 lg:ml-24 lg:w-1/2 lg:mr-10">
