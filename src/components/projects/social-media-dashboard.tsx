@@ -9,7 +9,7 @@ function SocialMediaDashboard() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col mx-5 justify-center">
-        <h2 className="flex flex-col text-3xl font-extrabold gap-1 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-blue-600 to-blue-700">
+        <h2 className="flex flex-col text-3xl font-extrabold gap-1 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-blue-600 to-blue-700 text-balance">
           Social Media Dashboard
         </h2>
         <span className="flex flex-row items-center gap-1">

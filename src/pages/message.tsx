@@ -10,7 +10,7 @@ function MessagePage() {
   return (
     <Reveal>
       <section id={t("Navbar.Message")} className="h-screen flex ">
-        <div className="flex flex-col lg:flex-row justify-center items-center p-10 mt-20">
+        <div className="flex flex-col lg:flex-row justify-center items-center p-5 mt-20">
           <div className="flex flex-col gap-2 leading-[30px] lg:w-2/5 lg:ml-36">
             <div>
               <h1 className="flex text-left text-xl font-bold">

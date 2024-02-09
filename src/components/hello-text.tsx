@@ -33,7 +33,7 @@ function HelloText() {
       </div>
       <div className="flex flex-col justify-center items-center">
         <IconsContact />
-        <div className="mt-9">
+        <div className="mt-9 pb-10">
           <a href={`/#${t("Navbar.AboutMe")}`}>
             <RxDoubleArrowDown
               className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce mt-20 md:my-20 lg:my-20"
