@@ -21,6 +21,8 @@ Here, I've utilized a variety of tools and technologies to create an engaging an
 
 - **i18next**: i18next is integrated to enable translation of the portfolio into multiple languages, including English and Portuguese.
 
+- **Zod**: Utilized for data validation and schema definition.
+
 ### Functionalities:
 
 - **Translation**: The portfolio includes a language translation feature powered by i18next. Visitors can easily switch between English and Portuguese versions of the page using language toggle buttons. This functionality provides a seamless browsing experience for users who prefer different languages, enhancing accessibility and user satisfaction.
