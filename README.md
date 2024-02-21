@@ -1,10 +1,9 @@
-# My Portfolio
+https://github.com/Cunegundess/DevPortifolio/assets/106770907/51171268-de40-40d9-87d7-3c7370bf42a5
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e8c2dbf0-e9d2-4fa5-8755-7aad209ad2b1/deploy-status)](https://app.netlify.com/sites/lucascunegundesportfolio/deploys)
 
-## Functionalities
-
-Welcome to my portfolio! Here, I've utilized a variety of tools and technologies to create an engaging and functional experience. Let's dive into some of the key features and functionalities:
+## Welcome to my portfolio!
+Here, I've utilized a variety of tools and technologies to create an engaging and functional experience. Let's dive into some of the key features and functionalities:
 
 ### Tools Used:
 
@@ -15,7 +14,7 @@ Welcome to my portfolio! Here, I've utilized a variety of tools and technologies
 - **React Router**: To handle navigation within the portfolio, React Router is implemented.
   
 - **Tailwind CSS**: Tailwind CSS is used for styling.
-  
+
 - **ShadcnUI**: ShadcnUI is employed for creating beautiful and customizable shadows.
   
 - **EmailJS**: The portfolio includes a contact form that utilizes EmailJS for sending emails.
