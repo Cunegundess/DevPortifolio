@@ -64,7 +64,7 @@ function ContactMePage() {
                 boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
               }}
               whileTap={{ scale: 0.9 }}
-              className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-4 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
+              className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-5 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
             >
               <motion.span
                 animate={{ scale: [0.9, 1.1, 0.9] }}

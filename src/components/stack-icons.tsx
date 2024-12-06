@@ -10,7 +10,7 @@ import {
   BiLogoTailwindCss,
   BiLogoTypescript,
 } from "react-icons/bi";
-import { SiGnubash, SiMicrosoftsqlserver } from "react-icons/si";
+import { SiCelery, SiGnubash, SiMicrosoftsqlserver, SiRabbitmq } from "react-icons/si";
 
 function StackIcons() {
   return (
@@ -22,7 +22,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 shadow-md"
       >
-        <BiLogoReact className="text-white" size={"65%"} />
+        <BiLogoReact className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -31,7 +31,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-amber-400 to-yellow-600 shadow-md "
       >
-        <BiLogoJavascript className="text-white" size={"65%"} />
+        <BiLogoJavascript className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -40,7 +40,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-blue-800 shadow-md "
       >
-        <BiLogoTypescript className="text-white" size={"65%"} />
+        <BiLogoTypescript className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -49,7 +49,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-green-600 to-green-900 shadow-md "
       >
-        <BiLogoDjango className="text-white" size={"65%"} />
+        <BiLogoDjango className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -58,7 +58,25 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-900 shadow-md "
       >
-        <BiLogoPython className="text-white" size={"65%"} />
+        <BiLogoPython className="text-white" size={"50%"} />
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        href="https://www.rabbitmq.com/"
+        target="_blank"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-800 shadow-md "
+      >
+        <SiRabbitmq className="text-white" size={"50%"} />
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        href="https://docs.celeryq.dev/en/stable/"
+        target="_blank"
+        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-green-500 to-green-800 shadow-md "
+      >
+        <SiCelery className="text-white" size={"50%"} />
       </motion.a>
       {/* <motion.a
         whileHover={{ scale: 1.1 }}
@@ -67,7 +85,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-700 to-blue-950 shadow-md "
       >
-        <SiLua className="text-white" size={"65%"} />
+        <SiLua className="text-white" size={"50%"} />
       </motion.a> */}
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -76,7 +94,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-red-800 shadow-md "
       >
-        <SiMicrosoftsqlserver className="text-white" size={"65%"} />
+        <SiMicrosoftsqlserver className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -85,7 +103,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-900 shadow-md "
       >
-        <BiLogoPostgresql className="text-white" size={"65%"} />
+        <BiLogoPostgresql className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -94,7 +112,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-400 to-blue-700 shadow-md "
       >
-        <BiLogoDocker className="text-white" size={"65%"} />
+        <BiLogoDocker className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -103,7 +121,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-gray-400 to-gray-700 shadow-md "
       >
-        <SiGnubash className="text-white" size={"65%"} />
+        <SiGnubash className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -112,7 +130,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-sky-400 to-sky-700 shadow-md "
       >
-        <BiLogoTailwindCss className="text-white" size={"65%"} />
+        <BiLogoTailwindCss className="text-white" size={"50%"} />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.1 }}
@@ -121,7 +139,7 @@ function StackIcons() {
         target="_blank"
         className="flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-purple-900 shadow-md "
       >
-        <BiLogoBootstrap className="text-white" size={"65%"} />
+        <BiLogoBootstrap className="text-white" size={"50%"} />
       </motion.a>
     </div>
   );

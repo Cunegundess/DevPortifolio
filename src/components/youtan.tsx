@@ -13,7 +13,7 @@ import {
 
 function Youtan() {
   return (
-    <Card className="rounded-lg shadow-lg md:mx-10 lg:mx-0">
+    <Card className="rounded-lg shadow-lg p-0 md:mx-10 lg:mx-0">
       <CardHeader>
         <CardTitle className="text-slate-950 dark:text-slate-50 text-2xl font-bold leading-[30px] ">
           {t("WorkPage.job")}
@@ -32,11 +32,30 @@ function Youtan() {
         </CardDescription>
       </CardHeader>
       <CardContent className="text-slate-950 dark:text-slate-50 text-center pb-0">
-        <Separator />
-        <p className="lg:text-left text-base font-medium leading-[25px] py-3">
-          {t("WorkPage.job_description")}
-        </p>
-        <Separator />
+        <div className="border-y-2 p-10">
+          <ul>
+            <li>
+              <p className="lg:text-left text-base font-medium leading-[25px]">
+                - {t("WorkPage.job_description1")}
+              </p>
+            </li>
+            <li>
+              <p className="lg:text-left text-base font-medium leading-[25px]">
+                - {t("WorkPage.job_description2")}
+              </p>
+            </li>
+            <li>
+              <p className="lg:text-left text-base font-medium leading-[25px]">
+                - {t("WorkPage.job_description3")}
+              </p>
+            </li>
+            <li>
+              <p className="lg:text-left text-base font-medium leading-[25px]">
+                - {t("WorkPage.job_description4")}
+              </p>
+            </li>
+          </ul>
+        </div>
       </CardContent>
       <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-3 lg:grid-rows-3 grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center">
         <Badge className="text-black bg-cyan-300 hover:bg-cyan-400 dark:hover:bg-cyan-500 transition shadow-xl text-center">
@@ -53,6 +72,12 @@ function Youtan() {
         </Badge>
         <Badge className="text-black bg-red-600 hover:bg-red-700 dark:hover:bg-red-700 transition shadow-xl text-center col-span-2">
           Microsoft SQL Server
+        </Badge>
+        <Badge className="text-black bg-orange-500 hover:bg-orange-600 dark:hover:bg-orange-600 transition shadow-xl text-center col-span-2">
+          RabbitMQ
+        </Badge>
+        <Badge className="text-black bg-green-400 hover:bg-green-600 dark:hover:bg-green-600 transition shadow-xl text-center col-span-2">
+          Celery
         </Badge>
       </CardFooter>
     </Card>

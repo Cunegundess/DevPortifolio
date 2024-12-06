@@ -11,7 +11,7 @@
 
   "IntroPage": {
     "greeting": "Hey, I'm ",
-    "presentation": "I transform ideas into reality through code and design"
+    "presentation": "I turn ideas into real solutions through technology"
   },
 
   "AboutPage": {
@@ -31,8 +31,11 @@
     "title": "Experience",
     "job": "Full-Stack Software Developer at ",
     "company": "Youtan",
-    "status": "Sep 2023 - Present",
-    "job_description": "Developing interactive and responsive user interfaces with TypeScript and React, focusing on reusable components and backend data integration. Building and maintaining web applications using the Django framework for robust systems and business logic, along with Django Rest Framework for API creation. Efficiently querying Microsoft SQL Server databases for data manipulation.",
+    "status": "Sep 2023 - Nov 2024",
+    "job_description1": "Collaboration in the creation and resolution of complex SQL procedures for SPED reports using Microsoft SQL Server, optimizing data handling and ensuring report accuracy and compliance.",
+    "job_description2": "Implementation of data extraction solutions using Pandas and Openpyxl in Django-based projects, resulting in a significant increase in project efficiency and productivity.",
+    "job_description3": "Development, integration, and maintenance of reusable components with React JS and TypeScript, promoting consistency and easing the maintenance of user interfaces in systems.",
+    "job_description4": "Creation and execution of comprehensive unit tests to validate the functionality and reliability of components and systems, ensuring greater security in development and deployment.",
     "text_button": "Download Resume"
   },
 

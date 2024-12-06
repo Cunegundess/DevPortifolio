@@ -11,7 +11,7 @@
 
   "IntroPage": {
     "greeting": "Olá, Sou o ",
-    "presentation": "Transformo ideias em realidade através de código e design"
+    "presentation": "Converto ideias em soluções reais por meio da tecnologia"
   },
 
   "AboutPage": {
@@ -31,8 +31,11 @@
     "title": "Experiência",
     "job": "Desenvolvedor de Software Full-Stack na ",
     "company": "Youtan",
-    "status": "Set 2023 - Atualmente",
-    "job_description": "Desenvolvendo interfaces de usuário interativas e responsivas com TypeScript e React, com foco em componentes reutilizáveis e integração de dados no backend. Construindo e mantendo aplicações web utilizando o framework Django para sistemas robustos e lógica de negócios, juntamente com o Django Rest Framework para criação de APIs. Consultando eficientemente bancos de dados Microsoft SQL Server para manipulação de dados.",
+    "status": "Set 2023 - Nov 2024",
+    "job_description1": "Colaboração na criação e resolução de procedimentos SQL complexos para relatórios SPED, utilizando o Microsoft SQL Server, otimizando o manuseio de dados e garantindo a precisão e conformidade dos relatórios.",
+    "job_description2": "Implementação de soluções de extração de dados utilizando Pandas e Openpyxl em projetos baseados em Django, resultando em um aumento significativo na eficiência e produtividade dos projetos.",
+    "job_description3": "Desenvolvimento, integração e manutenção de componentes reutilizáveis com React JS e TypeScript, promovendo consistência e facilitando a manutenção das interfaces de usuário nos sistemas",
+    "job_description4": "Criação e execução de testes unitários abrangentes para validar a funcionalidade e confiabilidade de componentes e sistemas, garantindo maior segurança no desenvolvimento e implantação.",
     "text_button": "Baixar Currículo"
   },
 
