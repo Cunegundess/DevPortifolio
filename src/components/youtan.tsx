@@ -1,4 +1,3 @@
-import { Separator } from "@radix-ui/react-separator";
 import { t } from "i18next";
 import { HiLink } from "react-icons/hi";
 import { Badge } from "./ui/badge";
