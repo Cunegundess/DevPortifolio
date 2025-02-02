@@ -32,10 +32,9 @@
     "job": "Full-Stack Software Developer at ",
     "company": "Youtan",
     "status": "Sep 2023 - Nov 2024",
-    "job_description1": "Collaboration in the creation and resolution of complex SQL procedures for SPED reports using Microsoft SQL Server, optimizing data handling and ensuring report accuracy and compliance.",
-    "job_description2": "Implementation of data extraction solutions using Pandas and Openpyxl in Django-based projects, resulting in a significant increase in project efficiency and productivity.",
-    "job_description3": "Development, integration, and maintenance of reusable components with React JS and TypeScript, promoting consistency and easing the maintenance of user interfaces in systems.",
-    "job_description4": "Creation and execution of comprehensive unit tests to validate the functionality and reliability of components and systems, ensuring greater security in development and deployment.",
+    "job_description1": "Creation and resolution of complex SQL Procedures for SPED reports using Microsoft SQL Server, ensuring compliance with regulations and optimizing the development flow in tax-related projects.",
+    "job_description2": "Development of custom tools for data extraction and validation in Django projects, automating processes with volumes exceeding 100,000 lines of data in SQL Procedures and SPED files. These solutions reduced the time required for validating tax reports, minimized rework and human errors by 80%, and increased operational efficiency by predicting potential inconsistencies before submitting the reports for approval.",
+    "job_description3": "Creation and execution of comprehensive unit tests, ensuring 70% test coverage in critical projects and reducing errors detected in staging and production, contributing to greater stability and reliability of delivered systems.",
     "text_button": "Download Resume"
   },
 

@@ -32,10 +32,9 @@
     "job": "Desenvolvedor de Software Full-Stack na ",
     "company": "Youtan",
     "status": "Set 2023 - Nov 2024",
-    "job_description1": "Colaboração na criação e resolução de procedimentos SQL complexos para relatórios SPED, utilizando o Microsoft SQL Server, otimizando o manuseio de dados e garantindo a precisão e conformidade dos relatórios.",
-    "job_description2": "Implementação de soluções de extração de dados utilizando Pandas e Openpyxl em projetos baseados em Django, resultando em um aumento significativo na eficiência e produtividade dos projetos.",
-    "job_description3": "Desenvolvimento, integração e manutenção de componentes reutilizáveis com React JS e TypeScript, promovendo consistência e facilitando a manutenção das interfaces de usuário nos sistemas",
-    "job_description4": "Criação e execução de testes unitários abrangentes para validar a funcionalidade e confiabilidade de componentes e sistemas, garantindo maior segurança no desenvolvimento e implantação.",
+    "job_description1": "Criação e resolução de Procedures SQL complexas para relatórios SPED utilizando Microsoft SQL Server, garantindo conformidade com regulamentações e otimizando o fluxo de desenvolvimento em projetos fiscais.",
+    "job_description2": "Desenvolvimento de ferramentas personalizadas para extração e validação de dados em projetos Django, automatizando processos em volumes acima de 100 mil linhas de dados em Procedures SQL e arquivos SPED. Essas soluções reduziram o tempo necessário para validação de relatórios fiscais, minimizaram o retrabalho e erros humanos em até 80%, e aumentaram a eficiência operacional ao prever possíveis inconsistências antes do envio dos relatórios para homologação e produção.",
+    "job_description3": "Criação e execução de testes unitários abrangentes, garantindo 70% de cobertura de testes em projetos críticos e reduzindo os erros detectados em homologação e produção, contribuindo para maior estabilidade e confiabilidade dos sistemas entregues.",
     "text_button": "Baixar Currículo"
   },
 

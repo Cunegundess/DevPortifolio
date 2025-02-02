@@ -48,11 +48,6 @@ function Youtan() {
                 - {t("WorkPage.job_description3")}
               </p>
             </li>
-            <li>
-              <p className="lg:text-left text-base font-medium leading-[25px]">
-                - {t("WorkPage.job_description4")}
-              </p>
-            </li>
           </ul>
         </div>
       </CardContent>
