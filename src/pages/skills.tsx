@@ -6,18 +6,23 @@ function SkillsPage() {
   return (
     <section
       id={t("Navbar.Skills")}
-      className="h-screen flex flex-col lg:mx-36"
+      className="py-20 px-5 md:px-10 lg:px-20 max-w-6xl mx-auto"
+      aria-labelledby="skills-title"
     >
-      <div className="justify-center items-center py-10 md:p-10 lg:p-10 mx-10 my-28">
-        <div className="flex flex-col gap-2 leading-[30px]">
-          <h1 className="text-xl font-medium">
-            <span className="drop-shadow-lg text-xl lg:text-2xl">🧑🏻‍💻</span>{" "}
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-2 leading-relaxed">
+          <h1 id="skills-title" className="text-3xl md:text-4xl font-bold">
+            <span className="drop-shadow-lg text-3xl md:text-4xl">💻</span>{" "}
             {t("SkillsPage.title")}
           </h1>
-          <span className="flex flex-col font-bold text-2xl lg:text-3xl mt-16 gap-10">
+          <p className="text-slate-600 dark:text-slate-400">
             {t("SkillsPage.content")}
-            <StackIcons />
-          </span>
+          </p>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="mt-8">
+          <StackIcons />
         </div>
       </div>
     </section>

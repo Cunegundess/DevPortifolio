@@ -30,6 +30,7 @@ function ContactMePage() {
       ref={scope}
       id={t("Navbar.Contact")}
       className="h-screen flex flex-col lg:mx-36"
+      aria-labelledby="contact-section-title"
     >
       <div className="justify-center items-center py-10 md:p-10 lg:p-10 mx-10 my-28">
         <motion.div
@@ -41,7 +42,7 @@ function ContactMePage() {
           animate={hidden ? "hidden" : "visible"}
           className="flex flex-col gap-2 leading-[30px]"
         >
-          <h1 className="text-xl font-medium">
+          <h1 id="contact-section-title" className="text-xl font-medium">
             <span className="drop-shadow-lg text-xl lg:text-2xl">🧑🏻‍💻</span>{" "}
             {t("ContactPage.title")}
           </h1>
@@ -50,21 +51,21 @@ function ContactMePage() {
             <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text capitalize">
               {t("ContactPage.strong_message")}{" "}
             </span>
-            <span className="drop-shadow-lg text-2xl lg:text-3xl">🚀</span>
+            <span className="drop-shadow-lg text-2xl lg:text-3xl" aria-hidden="true">🚀</span>
           </div>
         </motion.div>
         <div className="flex flex-col justify-center items-center mt-10">
           <IconsContact />
         </div>
         <div className="flex justify-center items-center mt-16">
-          <a href={`/${t("Navbar.Message")}`}>
+          <a href={`/${t("Navbar.Message")}`} aria-label="Open contact form">
             <motion.button
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
               }}
               whileTap={{ scale: 0.9 }}
-              className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-5 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2"
+              className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-5 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
             >
               <motion.span
                 animate={{ scale: [0.9, 1.1, 0.9] }}
@@ -73,6 +74,7 @@ function ContactMePage() {
                   repeatType: "loop",
                   repeat: Infinity,
                 }}
+                aria-hidden="true"
               >
                 <TbMessageCircleShare size={25} className="text-white" />
               </motion.span>

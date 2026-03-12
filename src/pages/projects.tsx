@@ -9,23 +9,65 @@ function ProjectsPage() {
   const [t] = useTranslation("translation");
 
   return (
-    <section id={t("Navbar.Projects")} className="h-screen flex flex-col">
+    <section id={t("Navbar.Projects")} className="py-20 px-5 md:px-10 lg:px-20">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ opacity: 0.5, duration: 0.5 }}
-        className="justify-center items-center py-10 px-5 md:p-10 lg:p-10 mx-5 my-28 bg-gradient-to-b from-gray-200 via-gray-200 to-gray-300 dark:bg-gradient-to-b dark:to-slate-950 dark:from-slate-950 rounded-xl shadow-xl"
+        viewport={{ once: true }}
+        className="max-w-6xl mx-auto"
       >
-        <div className="flex flex-col gap-2 leading-[30px] lg:mx-36">
-          <h1 className="text-xl font-medium px-5 lg:px-0 lg:mx-5">
-            <span className="drop-shadow-lg text-xl lg:text-2xl">🧑🏻‍💻</span>{" "}
-            {t("ProjectsPage.title")}
-          </h1>
-          <div className="flex flex-col space-y-60 mt-16">
-            <SocialMediaDashboard />
-            <Bibliotech />
-            <CompanyHub />
-            <UnderConstruction />
+        <div className="flex flex-col gap-8">
+          {/* Section Title */}
+          <div className="flex flex-col gap-2">
+            <h1 className="text-3xl md:text-4xl font-bold" aria-labelledby="projects-title">
+              <span className="drop-shadow-lg text-3xl md:text-4xl">🚀</span>{" "}
+              <span id="projects-title">{t("ProjectsPage.title")}</span>
+            </h1>
+            <p className="text-slate-600 dark:text-slate-400 max-w-xl">
+              A showcase of my recent projects and works that demonstrate my expertise in full-stack development, backend engineering, and problem-solving.
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+            {/* Main Projects - Featured */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <SocialMediaDashboard />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Bibliotech />
+            </motion.div>
+
+            {/* Additional Projects */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <CompanyHub />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <UnderConstruction />
+            </motion.div>
           </div>
         </div>
       </motion.div>
