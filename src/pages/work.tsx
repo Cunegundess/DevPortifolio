@@ -66,16 +66,18 @@ function WorkPage() {
                       Software Engineer · Proxion Solutions
                     </h3>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent font-semibold uppercase tracking-wide">
-                      Dez 2024 — Presente
+                      Abr 2025 — Presente
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Kotlin · Java · Spring Boot · REST APIs · PostgreSQL · Docker
+                    Python · Django · Kotlin · REST APIs · PostgreSQL · Docker
                   </p>
                   <ul className="mt-2 space-y-1 text-sm md:text-base text-foreground/80 dark:text-foreground/90">
-                    <li>▸ Desenvolvimento de back-ends e APIs REST escaláveis em Kotlin/Java com Spring Boot.</li>
-                    <li>▸ Integração com bancos de dados relacionais e serviços internos.</li>
-                    <li>▸ Colaboração com times multidisciplinares em projetos de produto e consultoria.</li>
+                    <li>▸ Otimizei consultas críticas em PostgreSQL e reestruturei políticas de retenção de dados, reduzindo em ~35% o tempo médio de resposta das operações mais custosas e diminuindo o volume de armazenamento ativo em produção na AWS.</li>
+                    <li>▸ Automatizei pipelines de dados e rotinas de backup e logs com RabbitMQ e Celery, eliminando ~8 horas/mês de processos manuais repetitivos e garantindo rastreabilidade completa de todas as operações críticas em ambiente AWS.</li>
+                    <li>▸ Desenvolvi módulos mobile em Kotlin com Jetpack Compose integrados a uma base legada em Java, acelerando em ~40% o desenvolvimento de novas telas com componentes reutilizáveis e mantendo consistência de UI/UX entre os módulos entregues.</li>
+                    <li>▸ Gerenciei a infraestrutura de 2 aplicações críticas em servidores Linux e Windows via Docker, SSH e VPN, mantendo disponibilidade acima de 90% com automações de monitoramento e manutenção via shell scripting e cron jobs.</li>
+                    <li>▸ Mentorei 2 desenvolvedores em boas práticas de versionamento, arquitetura de dados e DevOps, reduzindo erros de deploy e acelerando o onboarding da equipe no ciclo de entrega contínua.</li>
                   </ul>
                 </div>
               </div>
