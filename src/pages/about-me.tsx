@@ -46,7 +46,9 @@ function AboutMePage() {
               <h1 id="about-title" className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 {t("AboutPage.title")}
               </h1>
-              <p className="text-accent font-semibold text-sm md:text-base">Conhece-me melhor</p>
+              <p className="text-accent font-semibold text-sm md:text-base">
+                {t("AboutPage.subtitle")}
+              </p>
             </div>
           </div>
 

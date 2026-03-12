@@ -31,8 +31,8 @@ function ProjectsPage() {
             </div>
             <p className="text-foreground/70 dark:text-foreground/80 max-w-2xl text-base md:text-lg">
               {useGitHubIntegration
-                ? "Meus repositórios mais importantes fixados no GitHub, atualizados automaticamente."
-                : t("ProjectsPage.description") || "A showcase of my recent projects and works that demonstrate my expertise in full-stack development, backend engineering, and problem-solving."
+                ? t("ProjectsPage.github_description")
+                : t("ProjectsPage.description")
               }
             </p>
           </div>

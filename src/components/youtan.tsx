@@ -65,6 +65,18 @@ function Youtan() {
                   {t("WorkPage.job_description3")}
                 </p>
               </li>
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  {t("WorkPage.job_description4")}
+                </p>
+              </li>
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  {t("WorkPage.job_description5")}
+                </p>
+              </li>
             </div>
           </CardContent>
 

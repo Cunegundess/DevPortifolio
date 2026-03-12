@@ -19,29 +19,54 @@
     "greetings": "Olá! Sou um",
     "job": "Desenvolvedor Full Stack",
     "about": "motivado pelo aprendizado contínuo, almejo novos desafios que me permitam transformá-los em soluções de software incríveis.",
+    "subtitle": "Conhece-me melhor",
     "objective": "Estou em busca de desafios empolgantes, onde posso agregar valor e promover o sucesso nos projetos em que trabalho. Estou determinado a superar obstáculos e aprofundar minhas habilidades na área."
   },
 
   "SkillsPage": {
     "title": "Habilidades",
-    "content": "Tecnologias que já trabalhei:"
+    "content": "Tecnologias que já trabalhei:",
+    "tech_stack_label": "Tech stack em que atuo"
   },
 
   "WorkPage": {
     "title": "Experiência",
+    "header_description": "Construindo soluções escaláveis em ambientes reais, com foco em back-end, APIs e integrações.",
+    "profile_label": "Perfil profissional",
+    "profile_description": "Hoje atuo como engenheiro de software com foco em back-end (Kotlin/Java, Spring Boot, Python/Django), APIs REST e integrações assíncronas com mensageria e filas. Tenho experiência tanto em produtos quanto em consultoria, trabalhando próximo de times de negócio e clientes.",
+    "recent_experience_label": "Experiência recente",
+    "trajectory_title": "Trajetória profissional",
     "job": "Desenvolvedor de Software Full-Stack na ",
     "company": "Youtan",
     "status": "Set 2023 - Nov 2024",
-    "job_description1": "Criação e resolução de Procedures SQL complexas para relatórios SPED utilizando Microsoft SQL Server, garantindo conformidade com regulamentações e otimizando o fluxo de desenvolvimento em projetos fiscais.",
-    "job_description2": "Desenvolvimento de ferramentas personalizadas para extração e validação de dados em projetos Django, automatizando processos em volumes acima de 100 mil linhas de dados em Procedures SQL e arquivos SPED. Essas soluções reduziram o tempo necessário para validação de relatórios fiscais, minimizaram o retrabalho e erros humanos em até 80%, e aumentaram a eficiência operacional ao prever possíveis inconsistências antes do envio dos relatórios para homologação e produção.",
-    "job_description3": "Criação e execução de testes unitários abrangentes, garantindo 70% de cobertura de testes em projetos críticos e reduzindo os erros detectados em homologação e produção, contribuindo para maior estabilidade e confiabilidade dos sistemas entregues.",
+    "job_description1": "Atuei em projetos de dados e integração com sistemas de BI corporativo para até 2 clientes simultâneos, garantindo consistência e qualidade das informações consumidas pelas áreas fiscais e contábeis em ambiente de alta exigência regulatória.",
+    "job_description2": "Desenvolvi queries complexas e procedures otimizadas em Microsoft SQL Server para relatórios SPED com mais de 300 mil linhas, assegurando conformidade regulatória e reduzindo o tempo de geração dos relatórios em aproximadamente 40% em relação ao processo anterior.",
+    "job_description3": "Criei ferramentas internas em Python (Pandas e Openpyxl) para geração e validação automática de consultas SQL e relatórios Excel, reduzindo em 80% o tempo de análise manual e praticamente eliminando erros de validação nas entregas para os clientes.",
+    "job_description4": "Estruturei pipelines de ETL em larga escala processando milhões de registros por ciclo, integrando os resultados a dashboards de BI e garantindo qualidade e rastreabilidade dos dados entregues às áreas de negócio.",
+    "job_description5": "Implantei testes automatizados cobrindo mais de 70% dos pipelines de dados, aumentando a previsibilidade das entregas e reduzindo incidentes de qualidade na produção ao longo dos projetos.",
+    "proxion_period": "Abr 2025 — Presente",
+    "proxion_tech_stack": "Python · Django · Kotlin · REST APIs · PostgreSQL · Docker",
+    "youtan_tech_stack": "React · TypeScript · Django · Docker · SQL Server · RabbitMQ · Celery",
     "text_button": "Baixar Currículo"
+  },
+
+  "Proxion": {
+    "job": "Engenheiro de Software",
+    "company": "Proxion Solutions",
+    "status": "Dez 2024 - Presente",
+    "job_description1": "Otimizei consultas críticas em PostgreSQL e reestruturei políticas de retenção de dados, reduzindo em ~35% o tempo médio de resposta das operações mais custosas e diminuindo o volume de armazenamento ativo em produção na AWS.",
+    "job_description2": "Automatizei pipelines de dados e rotinas de backup e logs com RabbitMQ e Celery, eliminando ~8 horas/mês de processos manuais repetitivos e garantindo rastreabilidade completa de todas as operações críticas em ambiente AWS.",
+    "job_description3": "Desenvolvi módulos mobile em Kotlin com Jetpack Compose integrados a uma base legada em Java, acelerando em ~40% o desenvolvimento de novas telas com componentes reutilizáveis e mantendo consistência de UI/UX entre os módulos entregues.",
+    "job_description4": "Gerenciei a infraestrutura de 2 aplicações críticas em servidores Linux e Windows via Docker, SSH e VPN, mantendo disponibilidade acima de 90% com automações de monitoramento e manutenção via shell scripting e cron jobs.",
+    "job_description5": "Mentorei 2 desenvolvedores em boas práticas de versionamento, arquitetura de dados e DevOps, reduzindo erros de deploy e acelerando o onboarding da equipe no ciclo de entrega contínua."
   },
 
   "CV": "cv/LucasCunegundes-curriculo.pdf",
 
   "ProjectsPage": {
     "title": "Projetos",
+    "description": "Uma vitrine dos meus projetos recentes que demonstram minha experiência em desenvolvimento full-stack, engenharia de back-end e resolução de problemas.",
+    "github_description": "Meus repositórios mais importantes fixados no GitHub, atualizados automaticamente.",
     "social_media_dashboard_description": "Projetado para oferecer insights sobre a presença em mídias sociais, este aplicativo de painel fornece estatísticas detalhadas sobre o engajamento do usuário e o desempenho das postagens. Ao agregar dados de várias plataformas de mídia social, ele oferece informações valiosas sobre a atividade do usuário, incluindo taxas de engajamento e alcance de postagens.",
     "bibliotech_description": "O Bibliotech é um sistema abrangente de gerenciamento de bibliotecas projetado para simplificar e aprimorar a administração de bibliotecas. Este projeto tem como objetivo fornecer uma solução abrangente para o gerenciamento de livros, empréstimos e usuários, simplificando o processo de catalogação, rastreamento de empréstimos e gerenciamento de usuários dentro das bibliotecas.",
     "company_hub_description": "O Company Hub é uma plataforma dinâmica dedicada à otimização do fluxo de gerenciamento e organização empresarial. Ele fornece um conjunto abrangente de ferramentas e recursos para facilitar o gerenciamento eficiente de documentos e clientes. Ao centralizar os processos de negócios e as interações com clientes, ele aumenta a produtividade e simplifica as operações para empresas de todos os tamanhos.",
@@ -53,6 +78,12 @@
     "title": "Entre em contato",
     "description": "Hey! Pronto para criar aplicativos web incríveis? Mande uma mensagem e vamos ",
     "strong_message": "transformar suas ideias em realidade!",
+    "intro_paragraph": "Fique à vontade para me chamar para falar sobre vagas, projetos freelas ou ideias que envolvam back-end, integrações e produtos digitais.",
+    "cta_label": "Vamos conversar",
+    "cta_body": "Respondo mais rápido por e-mail ou LinkedIn, mas você também pode usar o formulário dedicado:",
+    "context_paragraph1": "Atualmente estou aberto a oportunidades em engenharia de software, back-end e mobile, em empresas de produto, fintechs, consultorias e grandes empresas de tecnologia.",
+    "context_paragraph2": "Se você estiver avaliando meu perfil para uma vaga, pode compartilhar detalhes sobre o time, stack atual e desafios que você espera resolver. Isso me ajuda a preparar uma resposta mais objetiva.",
+    "context_paragraph3": "Preferências: modelos híbridos ou remoto, times com boas práticas de engenharia (code review, testes, CI/CD) e espaço para evolução constante.",
     "name_input": "Insira seu nome",
     "email_input": "Insira seu email",
     "message_input": "Insira sua mensagem",
@@ -60,6 +91,13 @@
     "text_button": "Mandar mensagem",
     "toast_title": "Sua mensagem foi enviada!!",
     "toast_description": "Muito obrigado, irei responder já já",
+    "toast_error_title": "❌ Não foi possível enviar sua mensagem",
+    "toast_error_description": "Por favor, tente novamente ou entre em contato diretamente.",
+    "aria_name": "Seu nome",
+    "aria_email": "Seu email",
+    "aria_message": "Sua mensagem",
+    "aria_sending": "Enviando mensagem...",
+    "aria_send": "Enviar mensagem",
     "zod_user_name": "Oops! Parece que você esqueceu de me contar seu nome 😅",
     "zod_user_email": "Hmm... Que email estranho 🤔 Tem certeza que é seu email?",
     "zod_user_message": "Pelo jeito você esqueceu de escrever sua mensagem... 📝"
@@ -69,6 +107,21 @@
     "title": "Entre em contato",
     "description": "Ótimo! Envie uma mensagem por esse formulário e vamos começar a desenvolver algo ",
     "strong_message": "incrível juntos!",
-    "go_back": "Voltar"
+    "go_back": "Voltar",
+    "form_helper": "Use este formulário para compartilhar contexto sobre vagas, projetos ou ideias. Quanto mais detalhes sobre stack, desafios e objetivos, melhor consigo te responder.",
+    "find_me_also": "Me encontre também em"
+  },
+
+  "Testimonials": {
+    "title": "O que dizem sobre mim",
+    "subtitle": "Feedback de colegas e líderes de time",
+    "default_1_quote": "Lucas entrega código limpo e bem organizado, demonstrando um forte entendimento de desenvolvimento full-stack. As contribuições dele melhoraram significativamente a manutenibilidade dos projetos.",
+    "default_1_author": "Líder de Time",
+    "default_1_role": "Gerente de Projetos",
+    "default_1_company": "Empresa de Tecnologia",
+    "default_2_quote": "Colaborativo, confiável e sempre disposto a aprender. Lucas traz entusiasmo para cada projeto e entrega resultados de alta qualidade.",
+    "default_2_author": "Desenvolvedor Sênior",
+    "default_2_role": "Líder Técnico",
+    "default_2_company": "Time de Desenvolvimento"
   }
 }

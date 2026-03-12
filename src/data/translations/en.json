@@ -19,29 +19,54 @@
     "greetings": "Hi! I'm a",
     "job": "Full Stack Developer",
     "about": "driven by continuous learning, I aim for new challenges that allow me to transform them into amazing software solutions.",
+    "subtitle": "Get to know me better",
     "objective": "I am seeking exciting challenges where I can add value and promote success in the projects I work on. Committed to overcoming obstacles and deepen my skills in the field."
   },
 
   "SkillsPage": {
     "title": "Skills",
-    "content": "Technologies I've worked with:"
+    "content": "Technologies I've worked with:",
+    "tech_stack_label": "Tech stack I work with"
   },
 
   "WorkPage": {
     "title": "Experience",
+    "header_description": "Building scalable solutions in real-world environments, focusing on back-end, APIs, and integrations.",
+    "profile_label": "Professional profile",
+    "profile_description": "I currently work as a software engineer focused on back-end (Kotlin/Java, Spring Boot, Python/Django), REST APIs, and asynchronous integrations with messaging and queues. I have experience both in product and consulting, working closely with business teams and clients.",
+    "recent_experience_label": "Recent experience",
+    "trajectory_title": "Professional journey",
     "job": "Full-Stack Software Developer at ",
     "company": "Youtan",
     "status": "Sep 2023 - Nov 2024",
-    "job_description1": "Creation and resolution of complex SQL Procedures for SPED reports using Microsoft SQL Server, ensuring compliance with regulations and optimizing the development flow in tax-related projects.",
-    "job_description2": "Development of custom tools for data extraction and validation in Django projects, automating processes with volumes exceeding 100,000 lines of data in SQL Procedures and SPED files. These solutions reduced the time required for validating tax reports, minimized rework and human errors by 80%, and increased operational efficiency by predicting potential inconsistencies before submitting the reports for approval.",
-    "job_description3": "Creation and execution of comprehensive unit tests, ensuring 70% test coverage in critical projects and reducing errors detected in staging and production, contributing to greater stability and reliability of delivered systems.",
+    "job_description1": "Worked on data projects and integration with corporate BI systems for up to 2 simultaneous clients, ensuring consistency and quality of information consumed by tax and accounting areas in a highly regulated environment.",
+    "job_description2": "Developed complex queries and optimized stored procedures in Microsoft SQL Server for SPED reports with more than 300,000 rows, ensuring regulatory compliance and reducing report generation time by about 40% compared to the previous process.",
+    "job_description3": "Built internal Python tools (Pandas and Openpyxl) for automatic generation and validation of SQL queries and Excel reports, cutting manual analysis time by 80% and virtually eliminating validation errors in client deliveries.",
+    "job_description4": "Designed large-scale ETL pipelines processing millions of records per cycle, integrating results into BI dashboards and ensuring the quality and traceability of data delivered to business areas.",
+    "job_description5": "Implemented automated tests covering more than 70% of data pipelines, increasing delivery predictability and reducing quality incidents in production over the course of the projects.",
+    "proxion_period": "Apr 2025 — Present",
+    "proxion_tech_stack": "Python · Django · Kotlin · REST APIs · PostgreSQL · Docker",
+    "youtan_tech_stack": "React · TypeScript · Django · Docker · SQL Server · RabbitMQ · Celery",
     "text_button": "Download Resume"
+  },
+
+  "Proxion": {
+    "job": "Software Engineer",
+    "company": "Proxion Solutions",
+    "status": "Dec 2024 - Present",
+    "job_description1": "Optimized critical PostgreSQL queries and restructured data retention policies, reducing the average response time of the most expensive operations by ~35% and decreasing active storage usage in AWS.",
+    "job_description2": "Automated data pipelines and backup/log routines using RabbitMQ and Celery, eliminating around 8 hours/month of repetitive manual tasks and ensuring full traceability of all critical operations in AWS.",
+    "job_description3": "Developed mobile modules in Kotlin with Jetpack Compose integrated into a legacy Java codebase, speeding up the development of new screens by ~40% with reusable components while keeping UI/UX consistent across delivered modules.",
+    "job_description4": "Managed the infrastructure of 2 critical applications on Linux and Windows servers using Docker, SSH, and VPN, maintaining over 99% availability with monitoring and maintenance automations via shell scripting and cron jobs.",
+    "job_description5": "Mentored 2 developers on best practices for version control, data architecture, and DevOps, reducing deployment errors and speeding up team onboarding into the continuous delivery cycle."
   },
 
   "CV": "cv/LucasCunegundes-resume.pdf",
 
   "ProjectsPage": {
     "title": "Projects",
+    "description": "A showcase of my recent projects that demonstrate my experience in full-stack development, backend engineering, and problem-solving.",
+    "github_description": "My most important pinned repositories on GitHub, automatically kept up to date.",
     "social_media_dashboard_description": "Designed to offer insights into social media presence, this dashboard app provides detailed statistics on user engagement and post performance. By aggregating data from various social media platforms, it offers valuable information about user activity, including engagement rates and post reach.",
     "bibliotech_description": "The Bibliotech is a comprehensive library management system designed to simplify and enhance library administration. This project aims to provide a comprehensive solution for managing books, loans, and library users, streamlining the process of cataloging, loan tracking, and user management within libraries.",
     "company_hub_description": "The Company Hub is a dynamic platform dedicated to optimizing the flow of business management and organization. It provides a comprehensive set of tools and resources to facilitate efficient management of documentation and clients. By centralizing business processes and client interactions, it enhances productivity and streamlines operations for businesses of all sizes.",
@@ -53,6 +78,12 @@
     "title": "Contact Me",
     "description": "Hey! Ready to create some awesome web applications? Drop me a line, and let's ",
     "strong_message": "turn your ideas into reality!",
+    "intro_paragraph": "Feel free to reach out to talk about roles, freelance projects, or ideas involving back-end, integrations, and digital products.",
+    "cta_label": "Let's talk",
+    "cta_body": "I usually reply faster via email or LinkedIn, but you can also use the dedicated form:",
+    "context_paragraph1": "I'm currently open to opportunities in software engineering, back-end, and mobile, in product companies, fintechs, consultancies, and large tech organizations.",
+    "context_paragraph2": "If you're reviewing my profile for a role, you can share details about the team, current stack, and the challenges you expect to solve. That helps me prepare a more objective response.",
+    "context_paragraph3": "Preferences: hybrid or remote models, teams with solid engineering practices (code review, tests, CI/CD) and space for continuous growth.",
     "name_input": "Enter your name",
     "email_input": "Enter your email",
     "message_input": "Type your message",
@@ -60,6 +91,13 @@
     "text_button": "Send message",
     "toast_title": "Your message was sent!!",
     "toast_description": "Thank you, I'll respond right away",
+    "toast_error_title": "❌ Failed to send your message",
+    "toast_error_description": "Please try again or contact me directly.",
+    "aria_name": "Your name",
+    "aria_email": "Your email",
+    "aria_message": "Your message",
+    "aria_sending": "Sending message...",
+    "aria_send": "Send message",
     "zod_user_name": "Oops! Looks like you forgot to tell me your name 😅",
     "zod_user_email": "Hmm... This email looks weird 🤔 Are you sure that's your email?",
     "zod_user_message": "Your message is empty... 📝"
@@ -69,6 +107,21 @@
     "title": "Contact Me",
     "description": "Great! Send me a message using the form, and let's start building something ",
     "strong_message": "amazing together!",
-    "go_back": "Go back"
+    "go_back": "Go back",
+    "form_helper": "Use this form to share context about roles, projects, or ideas. The more details you provide about stack, challenges, and goals, the better I can respond.",
+    "find_me_also": "You can also find me on"
+  },
+
+  "Testimonials": {
+    "title": "What People Say",
+    "subtitle": "Feedback from colleagues and team members",
+    "default_1_quote": "Lucas delivers clean, well-documented code and demonstrates a strong understanding of full-stack development. His contributions significantly improved our project's maintainability.",
+    "default_1_author": "Team Lead",
+    "default_1_role": "Project Manager",
+    "default_1_company": "Tech Company",
+    "default_2_quote": "Collaborative, reliable, and always eager to learn. Lucas brings enthusiasm to every project and produces high-quality results.",
+    "default_2_author": "Senior Developer",
+    "default_2_role": "Technical Lead",
+    "default_2_company": "Development Team"
   }
 }

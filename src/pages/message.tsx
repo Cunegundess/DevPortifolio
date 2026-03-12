@@ -31,12 +31,12 @@ function MessagePage() {
                 <span className="drop-shadow-lg text-2xl lg:text-3xl">🚀</span>
               </div>
               <p className="text-base md:text-lg text-foreground/70 dark:text-foreground/80 max-w-xl">
-                Use este formulário para compartilhar contexto sobre vagas, projetos ou ideias. Quanto mais detalhes sobre stack, desafios e objetivos, melhor consigo te responder.
+                {t("MessagePage.form_helper")}
               </p>
             </div>
             <div className="flex flex-col items-start mt-4 gap-3">
               <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                Me encontre também em
+                {t("MessagePage.find_me_also")}
               </p>
               <IconsContact />
             </div>

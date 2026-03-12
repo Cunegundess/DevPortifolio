@@ -34,7 +34,11 @@ export default function ContactForm() {
 
   async function HandleFormFields() {
     if (!ContactForm.current) {
-      toast.error("❌ Form reference error");
+      toast.error(t("ContactPage.toast_error_title"), {
+        description: t("ContactPage.toast_error_description"),
+        duration: 3000,
+        position: "top-right",
+      });
       return;
     }
 
@@ -58,8 +62,8 @@ export default function ContactForm() {
       }
     } catch (error) {
       console.error("EmailJS Error:", error);
-      toast.error("❌ Failed to send message", {
-        description: "Please try again or contact directly",
+      toast.error(t("ContactPage.toast_error_title"), {
+        description: t("ContactPage.toast_error_description"),
         duration: 3000,
         position: "top-right",
       });
@@ -81,7 +85,7 @@ export default function ContactForm() {
             type="text"
             placeholder={t("ContactPage.name_input")}
             id="name"
-            aria-label="Your name"
+            aria-label={t("ContactPage.aria_name")}
             className="w-full p-2 rounded bg-secondary dark:bg-secondary/40 focus:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition"
             {...register("user_name", { required: true })}
           />
@@ -94,7 +98,7 @@ export default function ContactForm() {
             type="email"
             placeholder={t("ContactPage.email_input")}
             id="email"
-            aria-label="Your email"
+            aria-label={t("ContactPage.aria_email")}
             className="w-full p-2 rounded bg-secondary dark:bg-secondary/40 focus:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition"
             {...register("user_email", { required: true })}
           />
@@ -107,7 +111,7 @@ export default function ContactForm() {
             placeholder={t("ContactPage.message_input")}
             className="w-full h-24 p-2 rounded bg-secondary dark:bg-secondary/40 focus:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition resize-none"
             id="message"
-            aria-label="Your message"
+            aria-label={t("ContactPage.aria_message")}
             {...register("message", { required: true })}
           />
           {errors.message && (
@@ -129,7 +133,7 @@ export default function ContactForm() {
             type="submit"
             disabled={isLoading}
             aria-busy={isLoading}
-            aria-label={isLoading ? "Sending message..." : "Send message"}
+            aria-label={isLoading ? t("ContactPage.aria_sending") : t("ContactPage.aria_send")}
           >
             {isLoading ? (
               <>

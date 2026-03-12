@@ -54,7 +54,7 @@ function ContactMePage() {
               <span className="drop-shadow-lg text-2xl lg:text-3xl" aria-hidden="true">🚀</span>
             </div>
             <p className="text-base md:text-lg text-foreground/70 dark:text-foreground/80 max-w-2xl">
-              Fique à vontade para me chamar para falar sobre vagas, projetos freelas ou ideias que envolvam back-end, integrações e produtos digitais.
+              {t("ContactPage.intro_paragraph")}
             </p>
           </div>
 
@@ -63,10 +63,10 @@ function ContactMePage() {
             <div className="rounded-2xl border border-border bg-card dark:bg-card/80 px-6 py-7 shadow-sm space-y-6">
               <div className="space-y-2">
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                  Vamos conversar
+                  {t("ContactPage.cta_label")}
                 </p>
                 <p className="text-base md:text-lg text-foreground/80 dark:text-foreground/90">
-                  Respondo mais rápido por e-mail ou LinkedIn, mas você também pode usar o formulário dedicado:
+                  {t("ContactPage.cta_body")}
                 </p>
               </div>
 
@@ -101,18 +101,10 @@ function ContactMePage() {
 
             {/* Bloco de contexto */}
             <div className="space-y-4 text-sm md:text-base text-foreground/75 dark:text-foreground/85">
-              <p>
-                Atualmente estou aberto a oportunidades em{" "}
-                <span className="font-semibold text-primary">engenharia de software, back-end e mobile</span>, em empresas de
-                produto, fintechs, consultorias e grandes empresas de tecnologia.
-              </p>
-              <p>
-                Se você estiver avaliando meu perfil para uma vaga, pode compartilhar detalhes sobre o time,
-                stack atual e desafios que você espera resolver. Isso me ajuda a preparar uma resposta mais objetiva.
-              </p>
+              <p>{t("ContactPage.context_paragraph1")}</p>
+              <p>{t("ContactPage.context_paragraph2")}</p>
               <p className="text-xs text-muted-foreground">
-                Preferências: modelos híbridos ou remoto, times com boas práticas de engenharia (code review, testes, CI/CD)
-                e espaço para evolução constante.
+                {t("ContactPage.context_paragraph3")}
               </p>
             </div>
           </div>

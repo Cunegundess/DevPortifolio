@@ -25,7 +25,7 @@ function SkillsPage() {
         {/* Tech Stack - barra deslizante */}
         <div className="mt-4 rounded-2xl border border-border bg-gradient-to-r from-secondary/60 via-background to-secondary/60 dark:from-secondary/40 dark:via-background dark:to-secondary/40 px-4 py-6">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            Tech stack em que atuo diariamente
+            {t("SkillsPage.tech_stack_label")}
           </p>
           <StackIcons />
         </div>

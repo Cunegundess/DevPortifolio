@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { t } from "i18next";
 import { Badge } from "./ui/badge";
 import {
     Card,
@@ -43,7 +44,7 @@ function Proxion() {
             <div className="flex items-center gap-3 mb-2">
               <div className="w-2 h-8 bg-gradient-to-b from-accent to-accent/70 rounded-full"></div>
               <CardTitle className="text-primary dark:text-primary-foreground text-2xl font-bold">
-                Software Engineer
+                {t("Proxion.job")}
               </CardTitle>
             </div>
             <a
@@ -52,10 +53,10 @@ function Proxion() {
               rel="noopener noreferrer"
               className="text-lg font-semibold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent hover:opacity-80 transition-opacity inline-block mb-3"
             >
-              Proxion Solutions
+              {t("Proxion.company")}
             </a>
             <CardDescription className="text-foreground/70 dark:text-foreground/80 text-base font-medium">
-              Dez 2024 - Presente
+              {t("Proxion.status")}
             </CardDescription>
           </CardHeader>
           
@@ -64,19 +65,31 @@ function Proxion() {
               <li className="list-none">
                 <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
                   <span className="text-accent font-bold mr-2">▸</span>
-                  Desenvolvimento backend com Kotlin/Java e Spring Boot
+                  {t("Proxion.job_description1")}
                 </p>
               </li>
               <li className="list-none">
                 <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
                   <span className="text-accent font-bold mr-2">▸</span>
-                  Projetando e implementando APIs REST escaláveis
+                  {t("Proxion.job_description2")}
                 </p>
               </li>
               <li className="list-none">
                 <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
                   <span className="text-accent font-bold mr-2">▸</span>
-                  Colaborando com times multifuncionais
+                  {t("Proxion.job_description3")}
+                </p>
+              </li>
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  {t("Proxion.job_description4")}
+                </p>
+              </li>
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  {t("Proxion.job_description5")}
                 </p>
               </li>
             </div>

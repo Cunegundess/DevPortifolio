@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import {
-    BiLogoBootstrap,
-    BiLogoDjango,
-    BiLogoDocker,
-    BiLogoJava,
-    BiLogoJavascript,
-    BiLogoPostgresql,
-    BiLogoPython,
-    BiLogoReact,
-    BiLogoSpringBoot,
-    BiLogoTailwindCss,
-    BiLogoTypescript,
+  BiLogoBootstrap,
+  BiLogoDjango,
+  BiLogoDocker,
+  BiLogoJava,
+  BiLogoJavascript,
+  BiLogoPostgresql,
+  BiLogoPython,
+  BiLogoReact,
+  BiLogoSpringBoot,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
 } from "react-icons/bi";
 import { SiCelery, SiGnubash, SiMicrosoftsqlserver, SiRabbitmq } from "react-icons/si";
 
@@ -146,7 +146,7 @@ function StackIcons() {
                     ? "text-purple-500"
                     : "text-accent"
                 }
-                size={44}
+                size={64}
               />
             </motion.a>
           );
