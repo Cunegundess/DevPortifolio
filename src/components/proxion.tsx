@@ -1,15 +1,32 @@
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "./ui/card";
 
 function Proxion() {
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -17,64 +34,75 @@ function Proxion() {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <Card className="rounded-lg shadow-lg p-0 md:mx-10 lg:mx-0 border-l-4 border-l-purple-500 hover:shadow-xl transition-all duration-300">
-        <CardHeader>
-          <CardTitle className="text-slate-950 dark:text-slate-50 text-2xl font-bold leading-[30px]">
-            Software Engineer at{" "}
+      <Card className="rounded-2xl shadow-lg p-6 md:p-8 border border-border bg-gradient-to-br from-secondary to-card dark:from-card/50 dark:to-background hover:shadow-xl transition-all duration-300 overflow-hidden relative">
+        {/* Decorative gradient background */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-accent/10 to-transparent dark:from-accent/5 rounded-full -mr-48 -mt-48 pointer-events-none"></div>
+        
+        <div className="relative z-10">
+          <CardHeader className="pb-4 px-0">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-accent to-accent/70 rounded-full"></div>
+              <CardTitle className="text-primary dark:text-primary-foreground text-2xl font-bold">
+                Software Engineer
+              </CardTitle>
+            </div>
             <a
               href="https://proxion.com.br/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-500 inline-flex items-center gap-1 transition-colors"
+              className="text-lg font-semibold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent hover:opacity-80 transition-opacity inline-block mb-3"
             >
               Proxion Solutions
             </a>
-          </CardTitle>
-          <CardDescription className="text-slate-950 dark:text-slate-50 text-xl font-medium leading-[30px]">
-            Dec 2024 - Present
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="text-slate-950 dark:text-slate-50 text-center pb-0">
-          <div className="border-y-2 p-10">
-            <ul>
-              <li>
-                <p className="lg:text-left text-base font-medium leading-[25px]">
-                  - Backend development with Kotlin/Java and Spring Boot framework
+            <CardDescription className="text-foreground/70 dark:text-foreground/80 text-base font-medium">
+              Dez 2024 - Presente
+            </CardDescription>
+          </CardHeader>
+          
+          <CardContent className="text-primary dark:text-primary-foreground pb-6 px-0">
+            <div className="space-y-3">
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  Desenvolvimento backend com Kotlin/Java e Spring Boot
                 </p>
               </li>
-              <li>
-                <p className="lg:text-left text-base font-medium leading-[25px]">
-                  - Designing and implementing scalable REST APIs for enterprise applications
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  Projetando e implementando APIs REST escaláveis
                 </p>
               </li>
-              <li>
-                <p className="lg:text-left text-base font-medium leading-[25px]">
-                  - Collaborating with cross-functional teams to deliver high-quality software solutions
+              <li className="list-none">
+                <p className="text-base font-medium leading-relaxed text-foreground/80 dark:text-foreground/90">
+                  <span className="text-accent font-bold mr-2">▸</span>
+                  Colaborando com times multifuncionais
                 </p>
               </li>
-            </ul>
-          </div>
-        </CardContent>
-        <CardFooter className="pt-5 grid grid-flow-col-reverse grid-rows-2 md:grid-rows-2 lg:grid-rows-2 grid-cols-3 gap-5 md:gap-3 lg:flex lg:justify-center lg:items-center text-center flex-wrap">
-          <Badge className="text-black bg-red-600 hover:bg-red-700 dark:hover:bg-red-700 transition shadow-xl text-center">
-            Kotlin
-          </Badge>
-          <Badge className="text-black bg-orange-600 hover:bg-orange-700 dark:hover:bg-orange-700 transition shadow-xl text-center">
-            Java
-          </Badge>
-          <Badge className="text-black bg-green-600 hover:bg-green-700 dark:hover:bg-green-700 transition shadow-xl text-center">
-            Spring Boot
-          </Badge>
-          <Badge className="text-black bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-700 transition shadow-xl text-center">
-            REST APIs
-          </Badge>
-          <Badge className="text-black bg-cyan-500 hover:bg-cyan-600 dark:hover:bg-cyan-600 transition shadow-xl text-center">
-            PostgreSQL
-          </Badge>
-          <Badge className="text-black bg-slate-700 hover:bg-slate-800 dark:hover:bg-slate-800 transition shadow-xl text-center">
-            Docker
-          </Badge>
-        </CardFooter>
+            </div>
+          </CardContent>
+
+          <CardFooter className="flex flex-wrap gap-2 pt-4 px-0 justify-start">
+            <Badge className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white border-0 shadow-md hover:shadow-lg transition-all">
+              Kotlin
+            </Badge>
+            <Badge className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white border-0 shadow-md hover:shadow-lg transition-all">
+              Java
+            </Badge>
+            <Badge className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white border-0 shadow-md hover:shadow-lg transition-all">
+              Spring Boot
+            </Badge>
+            <Badge className="bg-gradient-to-r from-accent to-accent/70 hover:from-accent/90 hover:to-accent text-accent-foreground border-0 shadow-md hover:shadow-lg transition-all">
+              REST APIs
+            </Badge>
+            <Badge className="bg-gradient-to-r from-accent/80 to-accent/60 hover:from-accent/90 hover:to-accent/75 text-accent-foreground border-0 shadow-md hover:shadow-lg transition-all">
+              PostgreSQL
+            </Badge>
+            <Badge className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 shadow-md hover:shadow-lg transition-all">
+              Docker
+            </Badge>
+          </CardFooter>
+        </div>
       </Card>
     </motion.div>
   );

@@ -4,6 +4,7 @@ interface StatProps {
   value: string;
   label: string;
   icon?: string;
+  helper?: string;
 }
 
 interface SocialProofProps {
@@ -36,25 +37,32 @@ export function SocialProof({ stats }: SocialProofProps) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center w-full py-8"
+      className="flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-stretch w-full py-6"
     >
       {stats.map((stat, idx) => (
         <motion.div
           key={idx}
           variants={itemVariants}
-          className="flex flex-col items-center gap-2 text-center"
+          className="flex flex-col items-start gap-3 text-left bg-card dark:bg-card/80 border border-border rounded-xl px-5 py-4 shadow-sm hover:shadow-md transition-all duration-300 min-w-[220px]"
         >
           {stat.icon && (
-            <span className="text-3xl mb-2" aria-hidden="true">
+            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/10 text-accent text-sm font-semibold" aria-hidden="true">
               {stat.icon}
             </span>
           )}
-          <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-700">
-            {stat.value}
-          </p>
-          <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 font-medium">
-            {stat.label}
-          </p>
+          <div className="space-y-1">
+            <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/70">
+              {stat.value}
+            </p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              {stat.label}
+            </p>
+            {stat.helper && (
+              <p className="text-xs md:text-sm text-foreground/70 dark:text-foreground/80">
+                {stat.helper}
+              </p>
+            )}
+          </div>
         </motion.div>
       ))}
     </motion.div>

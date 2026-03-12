@@ -1,157 +1,157 @@
 import { motion } from "framer-motion";
 import {
-  BiLogoBootstrap,
-  BiLogoDjango,
-  BiLogoDocker,
-  BiLogoJava,
-  BiLogoJavascript,
-  BiLogoPostgresql,
-  BiLogoPython,
-  BiLogoReact,
-  BiLogoSpringBoot,
-  BiLogoTailwindCss,
-  BiLogoTypescript,
+    BiLogoBootstrap,
+    BiLogoDjango,
+    BiLogoDocker,
+    BiLogoJava,
+    BiLogoJavascript,
+    BiLogoPostgresql,
+    BiLogoPython,
+    BiLogoReact,
+    BiLogoSpringBoot,
+    BiLogoTailwindCss,
+    BiLogoTypescript,
 } from "react-icons/bi";
 import { SiCelery, SiGnubash, SiMicrosoftsqlserver, SiRabbitmq } from "react-icons/si";
 
+const stackItems = [
+  {
+    name: "React",
+    href: "https://react.dev/",
+    icon: BiLogoReact,
+  },
+  {
+    name: "JavaScript",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    icon: BiLogoJavascript,
+  },
+  {
+    name: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+    icon: BiLogoTypescript,
+  },
+  {
+    name: "Django",
+    href: "https://www.djangoproject.com/",
+    icon: BiLogoDjango,
+  },
+  {
+    name: "Python",
+    href: "https://www.python.org/",
+    icon: BiLogoPython,
+  },
+  {
+    name: "Java",
+    href: "https://docs.oracle.com/en/java/",
+    icon: BiLogoJava,
+  },
+  {
+    name: "Spring Boot",
+    href: "https://docs.spring.io/spring-framework/reference/index.html",
+    icon: BiLogoSpringBoot,
+  },
+  {
+    name: "RabbitMQ",
+    href: "https://www.rabbitmq.com/",
+    icon: SiRabbitmq,
+  },
+  {
+    name: "Celery",
+    href: "https://docs.celeryq.dev/en/stable/",
+    icon: SiCelery,
+  },
+  {
+    name: "SQL Server",
+    href: "https://www.microsoft.com/en-us/sql-server/",
+    icon: SiMicrosoftsqlserver,
+  },
+  {
+    name: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    icon: BiLogoPostgresql,
+  },
+  {
+    name: "Docker",
+    href: "https://www.docker.com/",
+    icon: BiLogoDocker,
+  },
+  {
+    name: "Bash",
+    href: "https://www.gnu.org/software/bash/manual/bash.html",
+    icon: SiGnubash,
+  },
+  {
+    name: "Tailwind",
+    href: "https://tailwindcss.com/",
+    icon: BiLogoTailwindCss,
+  },
+  {
+    name: "Bootstrap",
+    href: "https://getbootstrap.com/",
+    icon: BiLogoBootstrap,
+  },
+];
+
 function StackIcons() {
   return (
-    <div className="grid grid-cols-4 max-[450px]:grid-cols-3 min-[600px]:grid-cols-6 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-7 lg:px-16 py-4">
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://react.dev/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 shadow-md"
+    <div className="relative overflow-hidden">
+      <motion.div
+        className="flex items-center gap-6 md:gap-8 lg:gap-10 py-3"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
       >
-        <BiLogoReact className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-amber-400 to-yellow-600 shadow-md "
-      >
-        <BiLogoJavascript className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.typescriptlang.org/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-blue-800 shadow-md "
-      >
-        <BiLogoTypescript className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.djangoproject.com/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-green-600 to-green-900 shadow-md "
-      >
-        <BiLogoDjango className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.python.org/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-900 shadow-md "
-      >
-        <BiLogoPython className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://docs.oracle.com/en/java/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-600 to-orange-900 shadow-md "
-      >
-        <BiLogoJava className="text-white" size={"60%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://docs.spring.io/spring-framework/reference/index.html"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-green-600 to-green-900 shadow-md "
-      >
-        <BiLogoSpringBoot className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.rabbitmq.com/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-800 shadow-md "
-      >
-        <SiRabbitmq className="text-white" size={"40%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://docs.celeryq.dev/en/stable/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-green-500 to-green-800 shadow-md "
-      >
-        <SiCelery className="text-white" size={"45%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.microsoft.com/en-us/sql-server/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-red-600 to-red-800 shadow-md "
-      >
-        <SiMicrosoftsqlserver className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.postgresql.org/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-blue-900 shadow-md "
-      >
-        <BiLogoPostgresql className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.docker.com/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-400 to-blue-700 shadow-md "
-      >
-        <BiLogoDocker className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://www.gnu.org/software/bash/manual/bash.html"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-gray-400 to-gray-700 shadow-md "
-      >
-        <SiGnubash className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://tailwindcss.com/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-sky-400 to-sky-700 shadow-md "
-      >
-        <BiLogoTailwindCss className="text-white" size={"50%"} />
-      </motion.a>
-      <motion.a
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        href="https://getbootstrap.com/"
-        target="_blank"
-        className="flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-purple-900 shadow-md "
-      >
-        <BiLogoBootstrap className="text-white" size={"50%"} />
-      </motion.a>
+        {[...stackItems, ...stackItems].map((item, index) => {
+          const Icon = item.icon;
+          return (
+            <motion.a
+              key={`${item.name}-${index}`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center"
+            >
+              <Icon
+                className={
+                  item.name === "React"
+                    ? "text-sky-400"
+                    : item.name === "JavaScript"
+                    ? "text-yellow-400"
+                    : item.name === "TypeScript"
+                    ? "text-blue-500"
+                    : item.name === "Django"
+                    ? "text-emerald-500"
+                    : item.name === "Python"
+                    ? "text-blue-400"
+                    : item.name === "Java"
+                    ? "text-orange-500"
+                    : item.name === "Spring Boot"
+                    ? "text-green-500"
+                    : item.name === "RabbitMQ"
+                    ? "text-orange-400"
+                    : item.name === "Celery"
+                    ? "text-lime-400"
+                    : item.name === "SQL Server"
+                    ? "text-red-500"
+                    : item.name === "PostgreSQL"
+                    ? "text-sky-500"
+                    : item.name === "Docker"
+                    ? "text-sky-400"
+                    : item.name === "Bash"
+                    ? "text-slate-500 dark:text-slate-300"
+                    : item.name === "Tailwind"
+                    ? "text-sky-400"
+                    : item.name === "Bootstrap"
+                    ? "text-purple-500"
+                    : "text-accent"
+                }
+                size={44}
+              />
+            </motion.a>
+          );
+        })}
+      </motion.div>
     </div>
   );
 }

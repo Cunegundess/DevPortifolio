@@ -69,12 +69,12 @@ export default function ContactForm() {
   }
 
   return (
-    <Card className="rounded-lg shadow-lg w-full h-full">
+    <Card className="rounded-2xl shadow-lg w-full h-full border border-border bg-card dark:bg-card/80">
       <CardContent className="p-0">
         <form
           ref={ContactForm}
           onSubmit={handleSubmit(HandleFormFields)}
-          className="flex flex-col mx-auto p-4 gap-3"
+          className="flex flex-col mx-auto p-4 md:p-5 gap-3"
           aria-label="Contact form"
         >
           <Input
@@ -82,7 +82,7 @@ export default function ContactForm() {
             placeholder={t("ContactPage.name_input")}
             id="name"
             aria-label="Your name"
-            className="w-full p-2 rounded bg-slate-100 dark:bg-slate-950 focus:border-blue-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition"
+            className="w-full p-2 rounded bg-secondary dark:bg-secondary/40 focus:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition"
             {...register("user_name", { required: true })}
           />
           {errors.user_name && (
@@ -95,7 +95,7 @@ export default function ContactForm() {
             placeholder={t("ContactPage.email_input")}
             id="email"
             aria-label="Your email"
-            className="w-full p-2 rounded bg-slate-100 dark:bg-slate-950 focus:border-blue-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition"
+            className="w-full p-2 rounded bg-secondary dark:bg-secondary/40 focus:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition"
             {...register("user_email", { required: true })}
           />
           {errors.user_email && (
@@ -105,7 +105,7 @@ export default function ContactForm() {
           )}
           <Textarea
             placeholder={t("ContactPage.message_input")}
-            className="w-full h-20 p-2 rounded bg-slate-100 dark:bg-slate-950 focus:border-blue-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition"
+            className="w-full h-24 p-2 rounded bg-secondary dark:bg-secondary/40 focus:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition resize-none"
             id="message"
             aria-label="Your message"
             {...register("message", { required: true })}
@@ -116,12 +116,16 @@ export default function ContactForm() {
             </p>
           )}
           <motion.button
-            whileHover={!isLoading ? {
-              scale: 1.02,
-              boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
-            } : {}}
-            whileTap={!isLoading ? { scale: 0.7 } : {}}
-            className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-2 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+            whileHover={
+              !isLoading
+                ? {
+                    scale: 1.02,
+                    boxShadow: "0px 10px 30px rgba(15, 23, 42, 0.25)",
+                  }
+                : {}
+            }
+            whileTap={!isLoading ? { scale: 0.96 } : {}}
+            className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent text-accent-foreground px-4 py-2 rounded-xl shadow-lg transition-all duration-300 ease-in-out gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
             type="submit"
             disabled={isLoading}
             aria-busy={isLoading}

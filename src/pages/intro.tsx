@@ -6,8 +6,8 @@ export function IntroPage() {
   const [t] = useTranslation("translation");
 
   return (
-    <section id={t("Navbar.Home")} className="h-screen flex flex-col" aria-labelledby="intro-title">
-      <div className="bg-gradient-to-b from-gray-200 via-gray-200 to-gray-300 dark:bg-gradient-to-b dark:from-slate-950 dark:via-slate-950 dark:to-slate-950 rounded-xl shadow-xl mx-3 mt-16 h-full">
+    <section id={t("Navbar.Home")} className="min-h-screen flex flex-col pt-8 pb-16 px-3 sm:px-4 lg:px-6" aria-labelledby="intro-title">
+      <div className="bg-gradient-to-b from-secondary via-secondary to-background dark:bg-gradient-to-b dark:from-secondary dark:via-secondary dark:to-background h-full rounded-xl shadow-lg max-w-6xl mx-auto">
         <Reveal>
           <HelloText />
         </Reveal>

@@ -1,9 +1,9 @@
 import {
-  motion,
-  useAnimate,
-  useInView,
-  useMotionValueEvent,
-  useScroll,
+    motion,
+    useAnimate,
+    useInView,
+    useMotionValueEvent,
+    useScroll,
 } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -29,10 +29,10 @@ function ContactMePage() {
     <section
       ref={scope}
       id={t("Navbar.Contact")}
-      className="h-screen flex flex-col lg:mx-36"
+      className="min-h-screen flex flex-col py-20 px-3 sm:px-4 lg:px-6"
       aria-labelledby="contact-section-title"
     >
-      <div className="justify-center items-center py-10 md:p-10 lg:p-10 mx-10 my-28">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           variants={{
             hidden: { opacity: 0, x: -75 },
@@ -40,48 +40,83 @@ function ContactMePage() {
           }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           animate={hidden ? "hidden" : "visible"}
-          className="flex flex-col gap-2 leading-[30px]"
+          className="flex flex-col gap-8"
         >
-          <h1 id="contact-section-title" className="text-xl font-medium">
-            <span className="drop-shadow-lg text-xl lg:text-2xl">🧑🏻‍💻</span>{" "}
-            {t("ContactPage.title")}
-          </h1>
-          <div className="mt-16 font-bold text-center text-3xl lg:text-4xl">
-            {t("ContactPage.description")}
-            <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text capitalize">
-              {t("ContactPage.strong_message")}{" "}
-            </span>
-            <span className="drop-shadow-lg text-2xl lg:text-3xl" aria-hidden="true">🚀</span>
+          <div className="space-y-3">
+            <h1 id="contact-section-title" className="text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+              {t("ContactPage.title")}
+            </h1>
+            <div className="font-bold text-3xl md:text-4xl text-primary leading-tight">
+              {t("ContactPage.description")}{" "}
+              <span className="bg-gradient-to-r from-accent to-accent/70 text-transparent bg-clip-text capitalize">
+                {t("ContactPage.strong_message")}{" "}
+              </span>
+              <span className="drop-shadow-lg text-2xl lg:text-3xl" aria-hidden="true">🚀</span>
+            </div>
+            <p className="text-base md:text-lg text-foreground/70 dark:text-foreground/80 max-w-2xl">
+              Fique à vontade para me chamar para falar sobre vagas, projetos freelas ou ideias que envolvam back-end, integrações e produtos digitais.
+            </p>
+          </div>
+
+          <div className="grid gap-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1.2fr)] items-center">
+            {/* CTA principal */}
+            <div className="rounded-2xl border border-border bg-card dark:bg-card/80 px-6 py-7 shadow-sm space-y-6">
+              <div className="space-y-2">
+                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                  Vamos conversar
+                </p>
+                <p className="text-base md:text-lg text-foreground/80 dark:text-foreground/90">
+                  Respondo mais rápido por e-mail ou LinkedIn, mas você também pode usar o formulário dedicado:
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-4">
+                <IconsContact />
+
+                <a href={`/${t("Navbar.Message")}`} aria-label="Open contact form" className="mt-2">
+                  <motion.button
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0px 10px 30px rgba(15, 23, 42, 0.25)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-full inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent text-accent-foreground px-6 py-3 rounded-xl shadow-lg transition-all duration-300 ease-in-out gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent"
+                  >
+                    <motion.span
+                      animate={{ scale: [0.9, 1.05, 0.9] }}
+                      transition={{
+                        duration: 1.5,
+                        repeatType: "loop",
+                        repeat: Infinity,
+                      }}
+                      aria-hidden="true"
+                    >
+                      <TbMessageCircleShare size={22} className="text-accent-foreground" />
+                    </motion.span>
+                    <span>{t("ContactPage.text_button")}</span>
+                  </motion.button>
+                </a>
+              </div>
+            </div>
+
+            {/* Bloco de contexto */}
+            <div className="space-y-4 text-sm md:text-base text-foreground/75 dark:text-foreground/85">
+              <p>
+                Atualmente estou aberto a oportunidades em{" "}
+                <span className="font-semibold text-primary">engenharia de software, back-end e mobile</span>, em empresas de
+                produto, fintechs, consultorias e grandes empresas de tecnologia.
+              </p>
+              <p>
+                Se você estiver avaliando meu perfil para uma vaga, pode compartilhar detalhes sobre o time,
+                stack atual e desafios que você espera resolver. Isso me ajuda a preparar uma resposta mais objetiva.
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Preferências: modelos híbridos ou remoto, times com boas práticas de engenharia (code review, testes, CI/CD)
+                e espaço para evolução constante.
+              </p>
+            </div>
           </div>
         </motion.div>
-        <div className="flex flex-col justify-center items-center mt-10">
-          <IconsContact />
-        </div>
-        <div className="flex justify-center items-center mt-16">
-          <a href={`/${t("Navbar.Message")}`} aria-label="Open contact form">
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.1)",
-              }}
-              whileTap={{ scale: 0.9 }}
-              className="inline-flex justify-center items-center text-center font-bold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-white p-5 rounded-lg shadow-xl transition-all duration-300 ease-in-out transform hover:shadow-2xl gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-            >
-              <motion.span
-                animate={{ scale: [0.9, 1.1, 0.9] }}
-                transition={{
-                  duration: 1.5,
-                  repeatType: "loop",
-                  repeat: Infinity,
-                }}
-                aria-hidden="true"
-              >
-                <TbMessageCircleShare size={25} className="text-white" />
-              </motion.span>
-              <span>{t("ContactPage.text_button")}</span>
-            </motion.button>
-          </a>
-        </div>
       </div>
     </section>
   );

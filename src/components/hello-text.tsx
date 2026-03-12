@@ -2,47 +2,62 @@ import { useTranslation } from "react-i18next";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { HeroCTA } from "./hero-cta";
 import IconsContact from "./icons-contact";
-import { SocialProof } from "./social-proof";
 
 function HelloText() {
   const [t] = useTranslation("translation");
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-16 mx-10 lg:mx-36 mt-16">
+    <div className="flex flex-col justify-center items-center space-y-12 mx-6 md:mx-16 lg:mx-20 py-12 md:py-16">
       <div className="relative">
         <img
-          className="rounded-full h-[40vw] w-[40vw] md:h-[20vw] md:w-[20vw] lg:h-[15vw] lg:w-[15vw]"
+          className="rounded-full h-[35vw] w-[35vw] md:h-[18vw] md:w-[18vw] lg:h-[13vw] lg:w-[13vw] border-4 border-accent shadow-lg"
           src="https://github.com/cunegundess.png"
           alt="Lucas Cunegundes profile picture"
         />
-        <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 lg:bottom-3 lg:right-3 flex bg-gray-50 shadow-lg rounded-full w-[9vw] h-[9vw] md:h-[4vw] md:w-[4vw] lg:w-[3vw] lg:h-[3vw] text-center justify-center items-center" aria-hidden="true">
-          <span className="drop-shadow-lg text-xl">👨🏻‍💻</span>
+        <div className="absolute bottom-1 right-1 md:bottom-2 md:right-2 lg:bottom-3 lg:right-3 flex bg-accent shadow-xl rounded-full w-[9vw] h-[9vw] md:h-[4vw] md:w-[4vw] lg:w-[3vw] lg:h-[3vw] text-center justify-center items-center text-accent-foreground font-bold" aria-hidden="true">
+          <span className="text-lg md:text-xl">✓</span>
         </div>
       </div>
-      <div className="flex flex-col gap-3 text-center w-fit h-fit">
-        <div className="flex flex-col md:flex-row lg:flex-row gap-3">
-          <h1 id="intro-title" className="font-extrabold text-5xl tracking-tight">
+      
+      <div className="flex flex-col gap-2 text-center w-fit max-w-2xl">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-3 justify-center items-center flex-wrap">
+          <h1 id="intro-title" className="font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight text-primary">
             {t("IntroPage.greeting")}
           </h1>
 
-          <p className="font-extrabold pb-2 text-5xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-700">
+          <p className="font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/80">
             Lucas Cunegundes
           </p>
         </div>
 
-        <span className="text-lg lg:text-xl font-medium trackin-tight">
+        <span className="text-base md:text-lg font-medium text-muted-foreground mt-2">
           {t("IntroPage.presentation")}
         </span>
       </div>
 
       {/* Social Proof Statistics */}
-      <SocialProof
+      {/* <SocialProof
         stats={[
-          { value: "1+", label: "Years Experience", icon: "⚡" },
-          { value: "3+", label: "Projects Completed", icon: "🚀" },
-          { value: "70%", label: "Test Coverage", icon: "✅" },
+          {
+            value: "3+",
+            label: "Anos de experiência",
+            icon: "⚡",
+            helper: "Back-end, Front-end, APIs rodando em ambiente real.",
+          },
+          {
+            value: "5+",
+            label: "Projetos entregues",
+            icon: "🚀",
+            helper: "Soluções web, integrações e serviços de dados.",
+          },
+          {
+            value: "70%",
+            label: "Cobertura de testes",
+            icon: "✅",
+            helper: "Média nos principais projetos pessoais.",
+          },
         ]}
-      />
+      /> */}
 
       {/* Primary CTA */}
       <HeroCTA />
@@ -50,10 +65,10 @@ function HelloText() {
       {/* Social Links */}
       <div className="flex flex-col justify-center items-center">
         <IconsContact />
-        <div className="mt-9 pb-10">
-          <a href={`/#${t("Navbar.AboutMe")}`} aria-label="Scroll to about me section" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 rounded-full">
+        <div className="mt-6 pb-6">
+          <a href={`/#${t("Navbar.AboutMe")}`} aria-label="Scroll to about me section" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent rounded-full inline-flex items-center justify-center">
             <RxDoubleArrowDown
-              className="text-slate-950 dark:text-slate-50 text-3xl animate-bounce mt-20 md:my-20 lg:my-20"
+              className="text-primary dark:text-accent text-3xl animate-bounce"
               size={30}
               aria-hidden="true"
             />

@@ -9,32 +9,41 @@ function MessagePage() {
 
   return (
     <Reveal>
-      <section id={t("Navbar.Message")} className="h-screen flex ">
-        <div className="flex flex-col lg:flex-row justify-center items-center p-5 mt-20">
-          <div className="flex flex-col gap-2 leading-[30px] lg:w-2/5 lg:ml-36">
-            <div>
-              <h1 className="flex text-left text-xl font-bold">
-                <a
-                  href="/"
-                  className="text-blue-500 hover:underline hover:decoration-3 inline-flex items-center"
-                >
-                  <IoIosArrowBack size={20} /> {t("MessagePage.go_back")}
-                </a>
-              </h1>
-              <div className="mt-16 font-bold text-center text-3xl lg:text-4xl">
+      <section id={t("Navbar.Message")} className="min-h-screen flex py-20 px-3 sm:px-4 lg:px-6">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
+          {/* Texto e links rápidos */}
+          <div className="flex-1 space-y-6">
+            <h1 className="flex text-left text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+              <a
+                href="/"
+                className="inline-flex items-center gap-1 text-muted-foreground hover:text-accent transition-colors"
+              >
+                <IoIosArrowBack size={18} /> {t("MessagePage.go_back")}
+              </a>
+            </h1>
+            <div className="space-y-4">
+              <div className="font-bold text-3xl lg:text-4xl text-primary leading-tight">
                 {t("MessagePage.description")}
-                <span className="bg-gradient-to-r from-cyan-500 to-blue-700 text-transparent bg-clip-text capitalize">
+                {" "}
+                <span className="bg-gradient-to-r from-accent to-accent/70 text-transparent bg-clip-text capitalize">
                   {t("MessagePage.strong_message")}{" "}
                 </span>
                 <span className="drop-shadow-lg text-2xl lg:text-3xl">🚀</span>
-              </div>{" "}
-              <div className="flex flex-col justify-center items-center mt-10">
-                <IconsContact />
               </div>
+              <p className="text-base md:text-lg text-foreground/70 dark:text-foreground/80 max-w-xl">
+                Use este formulário para compartilhar contexto sobre vagas, projetos ou ideias. Quanto mais detalhes sobre stack, desafios e objetivos, melhor consigo te responder.
+              </p>
+            </div>
+            <div className="flex flex-col items-start mt-4 gap-3">
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                Me encontre também em
+              </p>
+              <IconsContact />
             </div>
           </div>
 
-          <div className="flex justify-center items-center mt-16 lg:ml-24 lg:w-1/2 lg:mr-10">
+          {/* Formulário */}
+          <div className="flex-1 max-w-xl w-full">
             <ContactForm />
           </div>
         </div>

@@ -5,40 +5,37 @@ import { HiOutlineMail } from "react-icons/hi";
 
 function IconsContact() {
   return (
-    <div className="flex gap-5 justify-between">
+    <div className="flex gap-4 justify-center">
       <motion.a
         href="https://www.linkedin.com/in/lucas-cunegundes/"
         target="_blank"
-        className="flex gap-1 shadow-lg p-1 border-solid border-2 border-slate-300 dark:bg-slate-950 dark:border-slate-900 rounded-md h-fit w-fit hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400"
-        whileHover={{ scale: 1.1 }}
+        rel="noreferrer"
+        className="flex items-center justify-center p-3 shadow-md border border-accent/30 dark:bg-accent/10 rounded-lg h-fit w-fit bg-accent/5 hover:bg-accent hover:text-accent-foreground text-accent transition-all duration-300"
+        whileHover={{ scale: 1.15 }}
         whileTap={{ scale: 0.9 }}
       >
-        <BiLogoLinkedin
-          className="text-slate-950 dark:text-slate-50"
-          size={30}
-        />
+        <BiLogoLinkedin size={24} />
       </motion.a>
 
       <motion.a
         href="https://www.github.com/Cunegundess/"
         target="_blank"
-        className="flex gap-1 shadow-lg p-1 border-solid border-2 border-slate-300 dark:bg-slate-950 dark:border-slate-900 rounded-md h-fit w-fit hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400"
-        whileHover={{ scale: 1.1 }}
+        rel="noreferrer"
+        className="flex items-center justify-center p-3 shadow-md border border-primary/30 dark:bg-primary/10 rounded-lg h-fit w-fit bg-primary/5 hover:bg-primary hover:text-primary-foreground text-primary transition-all duration-300"
+        whileHover={{ scale: 1.15 }}
         whileTap={{ scale: 0.9 }}
       >
-        <FaGithubAlt className="text-slate-950 dark:text-slate-50" size={30} />
+        <FaGithubAlt size={24} />
       </motion.a>
       <motion.a
         href="mailto:lucascsantana6@gmail.com"
         target="_blank"
-        className="flex gap-1 shadow-lg p-1 border-solid border-2 border-slate-300 dark:bg-slate-950 dark:border-slate-900 rounded-md h-fit w-fit hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400"
-        whileHover={{ scale: 1.1 }}
+        rel="noreferrer"
+        className="flex items-center justify-center p-3 shadow-md border border-accent/30 dark:bg-accent/10 rounded-lg h-fit w-fit bg-accent/5 hover:bg-accent hover:text-accent-foreground text-accent transition-all duration-300"
+        whileHover={{ scale: 1.15 }}
         whileTap={{ scale: 0.9 }}
       >
-        <HiOutlineMail
-          className="text-slate-950 dark:text-slate-50"
-          size={30}
-        />
+        <HiOutlineMail size={24} />
       </motion.a>
     </div>
   );
