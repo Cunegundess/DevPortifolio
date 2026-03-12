@@ -40,7 +40,7 @@ export function ProjectCard({
               {emoji}
             </span>
             <div>
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-foreground">
+              <h3 className="text-2xl font-bold text-primary dark:text-primary">
                 {title}
               </h3>
               {impact && (
