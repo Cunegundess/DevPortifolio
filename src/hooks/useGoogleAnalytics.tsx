@@ -42,7 +42,7 @@ export function useGoogleAnalytics(measurementId?: string) {
 
       window.dataLayer = window.dataLayer || [];
       function gtag(...args: unknown[]) {
-        window.dataLayer.push(arguments);
+        window.dataLayer.push(args);
       }
       window.gtag = gtag;
       gtag("js", new Date());

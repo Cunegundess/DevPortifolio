@@ -29,7 +29,7 @@ export function TestimonialCard({
       <div className="flex gap-1">
         {[...Array(5)].map((_, i) => (
           <span key={i} className="text-lg" aria-hidden="true">
-            ⭐
+						{emoji}
           </span>
         ))}
       </div>

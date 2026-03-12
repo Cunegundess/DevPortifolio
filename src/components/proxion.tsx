@@ -10,22 +10,22 @@ import {
 } from "./ui/card";
 
 function Proxion() {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0 },
-  };
+  // const containerVariants = {
+  //   hidden: { opacity: 0, y: 20 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: {
+  //       staggerChildren: 0.1,
+  //       delayChildren: 0.2,
+  //     },
+  //   },
+  // };
+  //
+  // const itemVariants = {
+  //   hidden: { opacity: 0, y: 10 },
+  //   visible: { opacity: 1, y: 0 },
+  // };
 
   return (
     <motion.div
